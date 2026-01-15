@@ -246,6 +246,40 @@ As a user, I want to perform calculations using a visual calculator interface so
 
 ---
 
+## Clarifications
+
+### Clarification Session (2026-01-15)
+
+*All ambiguities resolved through context inference — no questions required.*
+
+| Decision | Inferred Value | Source |
+|----------|----------------|--------|
+| Display after operator click | Clear display for second operand entry | AC-003 specification |
+| Chained calculations | Result becomes first operand for next operation | UX Flow: "chain operations" |
+| Backend base URL | Configurable constant (not hardcoded) | Constitution: no hardcoding |
+| Memory indicator location | Adjacent to display area | Standard calculator UX |
+| Decimal display format | Leading zero ("0.5" not ".5") | Industry standard |
+| Negative number format | Leading minus sign | Industry standard |
+
+### Inferred Design Decisions
+
+**Display State Management** (inferred from UX Flows + AC-003):
+- After clicking operator, display clears to accept second operand
+- Previous operand stored in state for calculation
+- Result replaces display and becomes potential first operand for chaining
+
+**Backend URL Configuration** (inferred from constitution):
+- Base URL defined as constant at top of api.js
+- Default: `http://localhost:8000` for development
+- Easily changeable for deployment
+
+**Error State Recovery** (inferred from AC-E02, AC-E03):
+- Error messages shown in display area
+- Buttons remain functional after error
+- User can clear or start new calculation
+
+---
+
 ## Execution Status
 
 - [x] User description parsed
