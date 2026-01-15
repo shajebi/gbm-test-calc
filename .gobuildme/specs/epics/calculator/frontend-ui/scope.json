@@ -1,0 +1,38 @@
+{
+  "feature": "calculator--frontend-ui",
+  "generated_from": ".gobuildme/specs/epics/calculator/frontend-ui/tasks.md",
+  "generated_at": "2026-01-15T17:50:00Z",
+  "allowed_files": [
+    "src/main.py",
+    "static/index.html",
+    "static/css/styles.css",
+    "static/js/app.js",
+    "static/js/calculator.js",
+    "static/js/api.js",
+    "tests/js/package.json",
+    "tests/js/unit/test_calculator_state.js",
+    "tests/js/integration/test_api_client.js",
+    "tests/e2e/test_calculator.py"
+  ],
+  "allowed_patterns": [
+    "static/**",
+    "tests/js/**",
+    "tests/e2e/**"
+  ],
+  "rationale": {
+    "src/main.py": "Task 2: Configure FastAPI static file serving",
+    "static/index.html": "Task 7: Create HTML structure",
+    "static/css/styles.css": "Task 8: Create CSS styling",
+    "static/js/app.js": "Task 11: Create app entry point",
+    "static/js/calculator.js": "Task 10: Create calculator state",
+    "static/js/api.js": "Task 9: Create API client",
+    "tests/js/package.json": "Task 3-3: Create Jest config",
+    "tests/js/unit/test_calculator_state.js": "Task 4: Unit tests for calculator state",
+    "tests/js/integration/test_api_client.js": "Task 5: Integration tests for API client",
+    "tests/e2e/test_calculator.py": "Task 6: E2E tests for calculator workflow",
+    "static/**": "Tasks 7-11: All frontend static files",
+    "tests/js/**": "Tasks 3-5: JS test infrastructure and tests",
+    "tests/e2e/**": "Task 6: E2E test files"
+  }
+}
+
