@@ -24,12 +24,17 @@
     "tests/unit",
     "tests/unit/__pycache__",
     "tests/unit/services",
+    "tests/js",
+    "tests/js/unit",
+    "tests/js/integration",
     "tests/integration",
     "tests/integration/__pycache__",
     "tests/__pycache__",
     "tests/api",
     "tests/api/contracts",
     "tests/api/__pycache__",
+    "tests/e2e",
+    "tests/e2e/__pycache__",
     "docs",
     ".mypy_cache",
     ".mypy_cache/3.11",
@@ -62,6 +67,9 @@
     ".mypy_cache/3.11/email",
     ".mypy_cache/3.11/pydantic_core",
     ".mypy_cache/3.11/src",
+    "static",
+    "static/css",
+    "static/js",
     "src",
     "src/__pycache__",
     "src/routes",
@@ -83,8 +91,8 @@
 ```json
 {
   "languages": {
-    "javascript":        1,
-    "python":       25,
+    "javascript":        6,
+    "python":       26,
     "total": 0
   },
   "database_indicators": [
