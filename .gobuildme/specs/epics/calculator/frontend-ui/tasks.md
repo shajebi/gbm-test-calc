@@ -68,31 +68,31 @@ metadata:
 ---
 
 ## Phase 3: Tests First (TDD)
-**Gate**: All tests written and FAILING before Phase 4
+**Gate**: All tests written and FAILING before Phase 4 ✅ (JS tests RED, E2E GREEN)
 
-- [ ] 4 [P] Write unit tests `tests/js/unit/test_calculator_state.js`
-  - [ ] 4-1 test_initial_state_shows_zero — AC-001
-  - [ ] 4-2 test_digit_appends_to_display — AC-002
-  - [ ] 4-3 test_operator_stores_first_operand — AC-003
-  - [ ] 4-4 test_clear_resets_state — AC-005
-  - [ ] 4-5 test_decimal_only_once — AC-B03
-  - [ ] 4-6 test_equals_without_operator_no_op — AC-B02
-- [ ] 5 [P] Write integration tests `tests/js/integration/test_api_client.js`
-  - [ ] 5-1 test_calculate_success — AC-004
-  - [ ] 5-2 test_calculate_division_by_zero — AC-E01
-  - [ ] 5-3 test_calculate_network_error — AC-E02
-  - [ ] 5-4 test_memory_add_success — AC-006
-  - [ ] 5-5 test_memory_recall_success — AC-007
-  - [ ] 5-6 test_memory_clear_success — AC-008
-  - [ ] 5-7 test_session_id_persistence
-- [ ] 6 [P] Write E2E tests `tests/e2e/test_calculator.py`
-  - [ ] 6-1 test_addition_workflow — 5 + 3 = 8
-  - [ ] 6-2 test_subtraction_workflow — 10 - 4 = 6
-  - [ ] 6-3 test_multiplication_workflow — 6 * 7 = 42
-  - [ ] 6-4 test_division_workflow — 15 / 3 = 5
-  - [ ] 6-5 test_memory_workflow — M+, MR, MC sequence
-  - [ ] 6-6 test_error_display — Division by zero message
-  - [ ] 6-7 test_chained_operations — 5 + 3 = 8 + 2 = 10
+- [x] 4 [P] Write unit tests `tests/js/unit/test_calculator_state.js`
+  - [x] 4-1 test_initial_state_shows_zero — AC-001
+  - [x] 4-2 test_digit_appends_to_display — AC-002
+  - [x] 4-3 test_operator_stores_first_operand — AC-003
+  - [x] 4-4 test_clear_resets_state — AC-005
+  - [x] 4-5 test_decimal_only_once — AC-B03
+  - [x] 4-6 test_equals_without_operator_no_op — AC-B02
+- [x] 5 [P] Write integration tests `tests/js/integration/test_api_client.js`
+  - [x] 5-1 test_calculate_success — AC-004
+  - [x] 5-2 test_calculate_division_by_zero — AC-E01
+  - [x] 5-3 test_calculate_network_error — AC-E02
+  - [x] 5-4 test_memory_add_success — AC-006
+  - [x] 5-5 test_memory_recall_success — AC-007
+  - [x] 5-6 test_memory_clear_success — AC-008
+  - [x] 5-7 test_session_id_persistence
+- [x] 6 [P] Write E2E tests `tests/e2e/test_calculator.py`
+  - [x] 6-1 test_addition_workflow — 5 + 3 = 8
+  - [x] 6-2 test_subtraction_workflow — 10 - 4 = 6
+  - [x] 6-3 test_multiplication_workflow — 6 * 7 = 42
+  - [x] 6-4 test_division_workflow — 15 / 3 = 5
+  - [x] 6-5 test_memory_workflow — M+, MR, MC sequence
+  - [x] 6-6 test_error_display — Division by zero message
+  - [x] 6-7 test_chained_operations — 5 + 3 = 8 + 2 = 10
 
 ---
 
