@@ -6,15 +6,16 @@ slices:
   - id: pr1
     slice_name: backend-api
     scope_summary: "FastAPI backend: calculate endpoint, memory endpoints, session handling, project structure"
-    status: in_progress
+    status: complete
     depends_on: null
     request_path: .gobuildme/specs/epics/calculator/backend-api/request.md
+    completed_at: "2026-01-15T16:50:00Z"
   - id: pr2
     slice_name: frontend-ui
     scope_summary: "HTML layout, CSS styling, JavaScript UI logic, API integration"
-    status: planned
+    status: in_progress
     depends_on: pr1
-    request_path: null
+    request_path: .gobuildme/specs/epics/calculator/frontend-ui/request.md
   - id: pr3
     slice_name: theming
     scope_summary: "Dark/light mode toggle, CSS variables, theme persistence"
