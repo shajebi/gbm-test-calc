@@ -13,9 +13,10 @@ slices:
   - id: pr2
     slice_name: frontend-ui
     scope_summary: "HTML layout, CSS styling, JavaScript UI logic, API integration"
-    status: in_progress
+    status: complete
     depends_on: pr1
     request_path: .gobuildme/specs/epics/calculator/frontend-ui/request.md
+    completed_at: "2026-01-15T19:00:00Z"
   - id: pr3
     slice_name: theming
     scope_summary: "Dark/light mode toggle, CSS variables, theme persistence"
