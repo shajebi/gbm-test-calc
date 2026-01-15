@@ -43,27 +43,27 @@ metadata:
 *Initialize project structure and dependencies*
 
 ### T001: Initialize Python project with uv
-- [ ] 1: Run `uv init` and configure `pyproject.toml`
-- [ ] 1-1: Add project metadata (name, version, description) in `pyproject.toml`
-- [ ] 1-2: Add dependencies (fastapi, uvicorn, pydantic) in `pyproject.toml`
-- [ ] 1-3: Add dev dependencies (pytest, pytest-cov, httpx, ruff, mypy) in `pyproject.toml`
-- [ ] 1-4: Run `uv sync` to create lockfile
+- [x] 1: Run `uv init` and configure `pyproject.toml`
+- [x] 1-1: Add project metadata (name, version, description) in `pyproject.toml`
+- [x] 1-2: Add dependencies (fastapi, uvicorn, pydantic) in `pyproject.toml`
+- [x] 1-3: Add dev dependencies (pytest, pytest-cov, httpx, ruff, mypy) in `pyproject.toml`
+- [x] 1-4: Run `uv sync` to create lockfile
 
 ### T002: Create source directory structure
-- [ ] 2: Create `src/` directory with `__init__.py` files [P]
-- [ ] 2-1: Create `src/__init__.py`
-- [ ] 2-2: Create `src/routes/__init__.py`
-- [ ] 2-3: Create `src/services/__init__.py`
+- [x] 2: Create `src/` directory with `__init__.py` files [P]
+- [x] 2-1: Create `src/__init__.py`
+- [x] 2-2: Create `src/routes/__init__.py`
+- [x] 2-3: Create `src/services/__init__.py`
 
 ### T003: Create test directory structure
-- [ ] 3: Create `tests/` directory with structure [P]
-- [ ] 3-1: Create `tests/__init__.py`
-- [ ] 3-2: Create `tests/conftest.py` with pytest fixtures
-- [ ] 3-3: Create `tests/unit/__init__.py`
-- [ ] 3-4: Create `tests/unit/services/__init__.py`
-- [ ] 3-5: Create `tests/integration/__init__.py`
-- [ ] 3-6: Create `tests/api/__init__.py`
-- [ ] 3-7: Create `tests/api/contracts/__init__.py`
+- [x] 3: Create `tests/` directory with structure [P]
+- [x] 3-1: Create `tests/__init__.py`
+- [x] 3-2: Create `tests/conftest.py` with pytest fixtures
+- [x] 3-3: Create `tests/unit/__init__.py`
+- [x] 3-4: Create `tests/unit/services/__init__.py`
+- [x] 3-5: Create `tests/integration/__init__.py`
+- [x] 3-6: Create `tests/api/__init__.py`
+- [x] 3-7: Create `tests/api/contracts/__init__.py`
 
 ---
 
@@ -71,60 +71,60 @@ metadata:
 *Write all tests from spec before implementation*
 
 ### T004: Write Pydantic model tests
-- [ ] 4: Create `tests/unit/test_models.py` with failing tests [P]
-- [ ] 4-1: `test_calculation_request_valid()` - Valid request parses
-- [ ] 4-2: `test_calculation_request_missing_field()` - Missing field raises ValidationError
-- [ ] 4-3: `test_calculation_request_invalid_type()` - Non-numeric raises ValidationError
-- [ ] 4-4: `test_memory_value_request_valid()` - Valid memory request parses
-- [ ] 4-5: `test_memory_response_structure()` - Response has required fields
+- [x] 4: Create `tests/unit/test_models.py` with failing tests [P]
+- [x] 4-1: `test_calculation_request_valid()` - Valid request parses
+- [x] 4-2: `test_calculation_request_missing_field()` - Missing field raises ValidationError
+- [x] 4-3: `test_calculation_request_invalid_type()` - Non-numeric raises ValidationError
+- [x] 4-4: `test_memory_value_request_valid()` - Valid memory request parses
+- [x] 4-5: `test_memory_response_structure()` - Response has required fields
 
 ### T005: Write calculator service tests
-- [ ] 5: Create `tests/unit/services/test_calculator.py` with failing tests [P]
-- [ ] 5-1: `test_add_positive_numbers()` - Returns sum (AC-001)
-- [ ] 5-2: `test_subtract_numbers()` - Returns difference (AC-002)
-- [ ] 5-3: `test_multiply_numbers()` - Returns product (AC-003)
-- [ ] 5-4: `test_divide_numbers()` - Returns quotient (AC-004)
-- [ ] 5-5: `test_divide_by_zero_raises_error()` - Raises DivisionByZeroError (AC-E01)
-- [ ] 5-6: `test_invalid_operator_raises_error()` - Raises InvalidOperatorError (AC-E02)
-- [ ] 5-7: `test_negative_result()` - Handles negatives (AC-B03)
-- [ ] 5-8: `test_floating_point_precision()` - Handles precision (AC-B04)
+- [x] 5: Create `tests/unit/services/test_calculator.py` with failing tests [P]
+- [x] 5-1: `test_add_positive_numbers()` - Returns sum (AC-001)
+- [x] 5-2: `test_subtract_numbers()` - Returns difference (AC-002)
+- [x] 5-3: `test_multiply_numbers()` - Returns product (AC-003)
+- [x] 5-4: `test_divide_numbers()` - Returns quotient (AC-004)
+- [x] 5-5: `test_divide_by_zero_raises_error()` - Raises DivisionByZeroError (AC-E01)
+- [x] 5-6: `test_invalid_operator_raises_error()` - Raises InvalidOperatorError (AC-E02)
+- [x] 5-7: `test_negative_result()` - Handles negatives (AC-B03)
+- [x] 5-8: `test_floating_point_precision()` - Handles precision (AC-B04)
 
 ### T006: Write memory service tests
-- [ ] 6: Create `tests/unit/services/test_memory.py` with failing tests [P]
-- [ ] 6-1: `test_add_to_memory()` - Adds value (AC-005)
-- [ ] 6-2: `test_subtract_from_memory()` - Subtracts value (AC-006)
-- [ ] 6-3: `test_recall_memory()` - Returns current value (AC-007)
-- [ ] 6-4: `test_clear_memory()` - Resets to zero (AC-008)
-- [ ] 6-5: `test_new_session_memory_zero()` - New session = 0 (AC-B02)
+- [x] 6: Create `tests/unit/services/test_memory.py` with failing tests [P]
+- [x] 6-1: `test_add_to_memory()` - Adds value (AC-005)
+- [x] 6-2: `test_subtract_from_memory()` - Subtracts value (AC-006)
+- [x] 6-3: `test_recall_memory()` - Returns current value (AC-007)
+- [x] 6-4: `test_clear_memory()` - Resets to zero (AC-008)
+- [x] 6-5: `test_new_session_memory_zero()` - New session = 0 (AC-B02)
 
 ### T007: Write calculate API integration tests
-- [ ] 7: Create `tests/integration/test_calculate_api.py` with failing tests [P]
-- [ ] 7-1: `test_calculate_addition_returns_200()` - POST /calculate + returns 200
-- [ ] 7-2: `test_calculate_division_by_zero_returns_400()` - Returns 400 error
-- [ ] 7-3: `test_calculate_invalid_operator_returns_400()` - Returns 400 error
-- [ ] 7-4: `test_calculate_missing_fields_returns_422()` - Validation error
-- [ ] 7-5: `test_calculate_response_time_under_100ms()` - Performance check
+- [x] 7: Create `tests/integration/test_calculate_api.py` with failing tests [P]
+- [x] 7-1: `test_calculate_addition_returns_200()` - POST /calculate + returns 200
+- [x] 7-2: `test_calculate_division_by_zero_returns_400()` - Returns 400 error
+- [x] 7-3: `test_calculate_invalid_operator_returns_400()` - Returns 400 error
+- [x] 7-4: `test_calculate_missing_fields_returns_422()` - Validation error
+- [x] 7-5: `test_calculate_response_time_under_100ms()` - Performance check
 
 ### T008: Write memory API integration tests
-- [ ] 8: Create `tests/integration/test_memory_api.py` with failing tests [P]
-- [ ] 8-1: `test_memory_add_returns_new_value()` - POST /memory/add works
-- [ ] 8-2: `test_memory_subtract_returns_new_value()` - POST /memory/subtract works
-- [ ] 8-3: `test_memory_recall_returns_value()` - GET /memory works
-- [ ] 8-4: `test_memory_clear_resets_to_zero()` - DELETE /memory works
-- [ ] 8-5: `test_memory_new_session_returns_zero()` - New session = 0
+- [x] 8: Create `tests/integration/test_memory_api.py` with failing tests [P]
+- [x] 8-1: `test_memory_add_returns_new_value()` - POST /memory/add works
+- [x] 8-2: `test_memory_subtract_returns_new_value()` - POST /memory/subtract works
+- [x] 8-3: `test_memory_recall_returns_value()` - GET /memory works
+- [x] 8-4: `test_memory_clear_resets_to_zero()` - DELETE /memory works
+- [x] 8-5: `test_memory_new_session_returns_zero()` - New session = 0
 
 ### T009: Write contract tests
-- [ ] 9: Create `tests/api/contracts/test_calculate_contract.py` with failing tests [P]
-- [ ] 9-1: `test_calculate_200_schema()` - Response matches CalculationResponse
-- [ ] 9-2: `test_calculate_400_error_schema()` - Error matches ErrorResponse
-- [ ] 9-3: `test_calculate_422_validation_schema()` - Validation errors structured
-- [ ] 10: Create `tests/api/contracts/test_memory_contract.py` with failing tests [P]
-- [ ] 10-1: `test_memory_add_response_schema()` - POST /memory/add schema
-- [ ] 10-2: `test_memory_get_response_schema()` - GET /memory schema
-- [ ] 10-3: `test_memory_delete_response_schema()` - DELETE /memory schema
+- [x] 9: Create `tests/api/contracts/test_calculate_contract.py` with failing tests [P]
+- [x] 9-1: `test_calculate_200_schema()` - Response matches CalculationResponse
+- [x] 9-2: `test_calculate_400_error_schema()` - Error matches ErrorResponse
+- [x] 9-3: `test_calculate_422_validation_schema()` - Validation errors structured
+- [x] 10: Create `tests/api/contracts/test_memory_contract.py` with failing tests [P]
+- [x] 10-1: `test_memory_add_response_schema()` - POST /memory/add schema
+- [x] 10-2: `test_memory_get_response_schema()` - GET /memory schema
+- [x] 10-3: `test_memory_delete_response_schema()` - DELETE /memory schema
 
 ### T010: Verify RED phase
-- [ ] 11: Run `uv run pytest` - All tests should FAIL (no implementation yet)
+- [x] 11: Run `uv run pytest` - All tests FAIL (RED confirmed ✓)
 
 ---
 
