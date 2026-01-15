@@ -36,16 +36,16 @@ metadata:
 ---
 
 ## Phase 1: Analysis
-**Gate**: All tasks `[x]` before Setup
+**Gate**: All tasks `[x]` before Setup ✅
 
-- [ ] A1 Validate design documents completeness
-  - [ ] A1-1 Verify plan.md has tech stack and structure
-  - [ ] A1-2 Verify spec.md has all 17 acceptance criteria
-  - [ ] A1-3 Verify data-model.md has state schema
-- [ ] A2 Validate architecture compliance
-  - [ ] A2-1 Check constitution for frontend constraints
-  - [ ] A2-2 Verify separation of concerns (no business logic in frontend)
-  - [ ] A2-3 Confirm API contracts match PR-1 endpoints
+- [x] A1 Validate design documents completeness
+  - [x] A1-1 Verify plan.md has tech stack and structure
+  - [x] A1-2 Verify spec.md has all 17 acceptance criteria
+  - [x] A1-3 Verify data-model.md has state schema
+- [x] A2 Validate architecture compliance
+  - [x] A2-1 Check constitution for frontend constraints
+  - [x] A2-2 Verify separation of concerns (no business logic in frontend)
+  - [x] A2-3 Confirm API contracts match PR-1 endpoints
 
 ---
 
