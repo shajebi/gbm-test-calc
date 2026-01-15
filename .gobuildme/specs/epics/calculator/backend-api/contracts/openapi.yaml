@@ -1,0 +1,162 @@
+openapi: 3.1.0
+info:
+  title: Calculator API
+  version: 1.0.0
+  description: REST API for calculator operations and memory management
+
+servers:
+  - url: http://localhost:8000
+    description: Development server
+
+paths:
+  /calculate:
+    post:
+      summary: Perform arithmetic calculation
+      operationId: calculate
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CalculationRequest'
+      responses:
+        '200':
+          description: Calculation result
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CalculationResponse'
+        '400':
+          description: Business logic error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '422':
+          description: Validation error
+
+  /memory/add:
+    post:
+      summary: Add value to memory (M+)
+      operationId: addToMemory
+      parameters:
+        - $ref: '#/components/parameters/SessionId'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/MemoryValueRequest'
+      responses:
+        '200':
+          description: Updated memory value
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/MemoryResponse'
+
+  /memory/subtract:
+    post:
+      summary: Subtract value from memory (M-)
+      operationId: subtractFromMemory
+      parameters:
+        - $ref: '#/components/parameters/SessionId'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/MemoryValueRequest'
+      responses:
+        '200':
+          description: Updated memory value
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/MemoryResponse'
+
+  /memory:
+    get:
+      summary: Recall memory value (MR)
+      operationId: getMemory
+      parameters:
+        - $ref: '#/components/parameters/SessionId'
+      responses:
+        '200':
+          description: Current memory value
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/MemoryResponse'
+    delete:
+      summary: Clear memory (MC)
+      operationId: clearMemory
+      parameters:
+        - $ref: '#/components/parameters/SessionId'
+      responses:
+        '200':
+          description: Memory cleared
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/MemoryResponse'
+
+components:
+  parameters:
+    SessionId:
+      name: X-Session-ID
+      in: header
+      required: false
+      schema:
+        type: string
+        format: uuid
+      description: Session identifier (auto-generated if not provided)
+
+  schemas:
+    CalculationRequest:
+      type: object
+      required: [operand1, operand2, operator]
+      properties:
+        operand1:
+          type: number
+        operand2:
+          type: number
+        operator:
+          type: string
+          enum: ["+", "-", "*", "/"]
+
+    CalculationResponse:
+      type: object
+      required: [result, operation]
+      properties:
+        result:
+          type: number
+        operation:
+          type: string
+
+    MemoryValueRequest:
+      type: object
+      required: [value]
+      properties:
+        value:
+          type: number
+
+    MemoryResponse:
+      type: object
+      required: [memory]
+      properties:
+        memory:
+          type: number
+        operation:
+          type: string
+
+    ErrorResponse:
+      type: object
+      required: [error, code]
+      properties:
+        error:
+          type: string
+        code:
+          type: string
+          enum: [DIVISION_BY_ZERO, INVALID_OPERATOR, OVERFLOW_ERROR]
+

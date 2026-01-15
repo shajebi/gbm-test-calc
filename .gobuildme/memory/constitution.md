@@ -1,59 +1,88 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+---
+description: "Constitution for GBM Test Calc - a full-stack calculator application with Python FastAPI backend and vanilla HTML/CSS/JS frontend"
+metadata:
+  artifact_type: constitution
+  created_timestamp: "2026-01-15T09:30:00Z"
+  created_by_git_user: "Saeed Hajebi"
+  input_summary: []
+---
+
+<!--
+SYNC IMPACT REPORT
+==================
+Version change: 1.0.0 (initial)
+Modified principles: N/A (initial creation)
+Added sections:
+  - Core Principles (I-V)
+  - Architectural Principles
+  - Technology Stack
+  - Development Environment
+Templates requiring updates:
+  - plan-template.md: ✅ reviewed
+  - spec-template.md: ✅ reviewed
+  - tasks-template.md: ✅ reviewed
+Follow-up TODOs: None
+-->
+
+# GBM Test Calc Constitution
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### I. Simplicity First
+Every design decision MUST favor simplicity over complexity. This calculator application prioritizes clarity, correctness, and maintainability:
+- No unnecessary abstractions or over-engineering
+- Vanilla technologies preferred (HTML, CSS, JS) over frameworks where appropriate
+- Code MUST be readable without extensive documentation
+- YAGNI (You Aren't Gonna Need It) strictly enforced
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+### II. Test-Driven Development (NON-NEGOTIABLE)
+TDD is mandatory for all backend code. Red-Green-Refactor cycle strictly enforced:
+- Tests MUST be written before implementation code
+- All tests MUST fail initially (RED phase)
+- Implementation code written to pass tests (GREEN phase)
+- Refactoring done with passing tests (REFACTOR phase)
+- Minimum 85% code coverage required
+- Test types required: unit tests, integration tests, API contract tests
+- Test framework: pytest with pytest-cov
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### III. API-First Design
+Backend functionality MUST be exposed through well-defined REST APIs:
+- OpenAPI/Swagger documentation required for all endpoints
+- Request/response schemas validated with Pydantic
+- Clear error responses with appropriate HTTP status codes
+- Stateless design (session state managed per-request)
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+### IV. Separation of Concerns
+Clear boundaries between frontend and backend:
+- Frontend handles UI logic and user interactions only
+- Backend handles all calculations and memory operations
+- No business logic in frontend JavaScript
+- REST API is the only communication channel
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+### V. Clean Code Standards
+Code quality standards are non-negotiable:
+- Python code MUST pass ruff linting and formatting
+- Type hints required for all Python functions and methods
+- mypy type checking MUST pass with strict mode
+- Functions MUST have docstrings describing purpose and parameters
+- No magic numbers - use named constants
 
 ## Architectural Principles
-<!-- Lightweight architectural constraints that all features must respect. These are checked during /constitution and guide detailed analysis in /analyze. -->
 
 ### System Architecture Constraints
-- [ ] **Microservices Boundaries**: [MICROSERVICES_POLICY]
-  <!-- Example: Respect existing service boundaries; New services require architecture review; No cross-service database access -->
-- [ ] **Data Architecture**: [DATA_ARCHITECTURE_RULES]
-  <!-- Example: Single source of truth per domain; Event-driven communication; No shared databases between services -->
-- [ ] **Integration Patterns**: [INTEGRATION_CONSTRAINTS]
-  <!-- Example: REST APIs for synchronous; Events for async; No direct database coupling; API versioning required -->
+- [x] **Application Structure**: Monolithic full-stack application with clear frontend/backend separation
+- [x] **Data Architecture**: In-memory session-based storage; no persistent database required for MVP
+- [x] **Integration Patterns**: REST APIs for frontend-backend communication; JSON request/response format
 
 ### Security Architecture
-- [ ] **Authentication & Authorization**: [AUTH_ARCHITECTURE]
-  <!-- Example: OAuth 2.0/OIDC required; Role-based access control; No service-to-service passwords -->
-- [ ] **Network Security**: [NETWORK_SECURITY_RULES]
-  <!-- Example: TLS everywhere; Private subnets for databases; WAF for public endpoints -->
-- [ ] **Data Protection**: [DATA_PROTECTION_ARCH]
-  <!-- Example: Encryption at rest and in transit; PII tokenization; Audit logging for sensitive operations -->
+- [x] **Authentication & Authorization**: Not required for MVP (single-user calculator)
+- [x] **Network Security**: CORS configured for local development; TLS for production
+- [x] **Data Protection**: No sensitive data stored; calculation memory is session-scoped and ephemeral
 
 ### Performance Architecture
-- [ ] **Scalability Constraints**: [SCALABILITY_RULES]
-  <!-- Example: Horizontal scaling preferred; Stateless services; Database read replicas for scaling -->
-- [ ] **Caching Strategy**: [CACHING_ARCHITECTURE]
-  <!-- Example: Redis for session data; CDN for static assets; Application-level caching patterns -->
-- [ ] **Performance Standards**: [PERFORMANCE_REQUIREMENTS]
-  <!-- Example: API response times <200ms; Database queries <100ms; Page load times <2s -->
+- [x] **Scalability Constraints**: Single-server deployment; stateless API design allows future horizontal scaling
+- [x] **Caching Strategy**: Not required for MVP; calculations are fast and memory is session-local
+- [x] **Performance Standards**: API response times <100ms; UI interactions instant (<50ms)
 
 ### Code Organization Constraints (LoC Analysis)
 <!-- Lines of Code (LoC) constraints drive manageable PR sizes and focused implementations. -->
@@ -191,75 +220,64 @@ workflow_enforcement:
 - **Persona override**: Listed personas always require architecture regardless of global setting
 - Architecture is always mandatory at `/gbm.specify` and `/gbm.plan` (defense in depth)
 
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
+## Quality Gates
 
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
+All code MUST pass these quality gates before merge:
+- Linting: `ruff check .` passes with zero errors
+- Formatting: `ruff format --check .` passes
+- Type checking: `mypy src/` passes with strict mode
+- Tests: `pytest` passes with 85%+ coverage
+- Security: No high/critical vulnerabilities in dependencies
 
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
+## Code Review Standards
 
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+All PRs require:
+- Self-review before requesting review
+- Clear description of changes and testing performed
+- Passing CI pipeline
+- No unresolved TODOs in new code
 
 ## Architecture Baseline
-<!-- This section defines the current architecture and technical constraints that features must align with. Fill with concrete values. -->
 
 ### Technology Stack
-- **Languages & Runtimes**: [APP_LANGS]
-  <!-- Example: Node.js 18+, Python 3.11+, Go 1.21+ -->
-- **Frameworks & Libraries** (approved): [APP_FRAMEWORKS]
-  <!-- Example: Express.js, FastAPI, Gin; React 18+, Vue 3+ for frontend -->
-- **Database Technologies**: [DATABASE_STACK]
-  <!-- Example: PostgreSQL 14+ primary, Redis for caching, Elasticsearch for search -->
+- **Languages & Runtimes**: Python 3.11+, HTML5, CSS3, JavaScript (ES6+)
+- **Frameworks & Libraries** (approved): FastAPI, Pydantic, uvicorn, pytest
+- **Database Technologies**: In-memory storage (dict-based session management)
 
 ## Development Environment
-<!-- This section tells AI agents how to run the application. Fill with concrete commands. -->
-<!-- AI agents read this during /gbm.implement orientation to know how to run tests and start the dev server. -->
 
 ### How to Run the Application
 
 ```bash
 # Development server
-[DEV_SERVER_COMMAND]
-<!-- Example: npm run dev, python manage.py runserver, go run ./cmd/server -->
+uv run uvicorn src.main:app --reload --host 0.0.0.0 --port 8000
 
 # Run tests
-[TEST_COMMAND]
-<!-- Example: npm test, pytest, go test ./..., make test -->
+uv run pytest --cov=src --cov-report=term-missing
 
 # Build for production
-[BUILD_COMMAND]
-<!-- Example: npm run build, python setup.py build, go build -o bin/app ./cmd/server -->
+# (No build step required - Python is interpreted)
 
 # Lint/format check
-[LINT_COMMAND]
-<!-- Example: npm run lint, ruff check ., golangci-lint run -->
+uv run ruff check . && uv run ruff format --check .
 ```
 
 ### Prerequisites
-- **Runtime**: [RUNTIME_VERSION]
-  <!-- Example: Node.js 18+, Python 3.11+, Go 1.21+ -->
-- **Package Manager**: [PACKAGE_MANAGER]
-  <!-- Example: npm 9+, poetry 1.5+, uv, go modules -->
-- **Environment Variables**: See `.env.example`
-  <!-- List critical env vars needed to run locally -->
+- **Runtime**: Python 3.11+
+- **Package Manager**: uv (recommended) or pip
+- **Environment Variables**: None required for development
 
 ### Quick Start
 
 ```bash
 # 1. Install dependencies
-[INSTALL_COMMAND]
-<!-- Example: npm install, poetry install, go mod download -->
+uv sync --dev
 
-# 2. Set up environment
-[ENV_SETUP_COMMAND]
-<!-- Example: cp .env.example .env, source .envrc -->
+# 2. Set up environment (no setup required for MVP)
+# No .env file needed for local development
 
 # 3. Start development
-[START_COMMAND]
-<!-- Example: npm run dev, make dev, docker-compose up -->
+uv run uvicorn src.main:app --reload
 ```
 
 **Why this section matters**: AI agents use this during `/gbm.implement` orientation to:
@@ -268,24 +286,16 @@ workflow_enforcement:
 3. Know how to start the dev server for manual testing
 
 ### System Architecture
-- **Service Architecture**: [SERVICE_ARCHITECTURE]
-  <!-- Example: Microservices with API Gateway; Event-driven communication; Domain-driven design -->
-- **Layering & Domain Boundaries**: [LAYERS_RULES]
-  <!-- Example: API → Service → Repository → Database; No cross-domain direct calls -->
-  - **Forbidden couplings**: [FORBIDDEN_COUPLINGS]
-  <!-- Example: No direct database access from API layer; No business logic in controllers -->
-- **Data Storage & Messaging**: [DATA_MESSAGING]
-  <!-- Example: PostgreSQL for transactional; Redis for caching; RabbitMQ for async messaging -->
+- **Service Architecture**: Monolithic full-stack application with REST API
+- **Layering & Domain Boundaries**: API routes → Services → In-memory storage
+  - **Forbidden couplings**: No calculation logic in frontend; No UI concerns in backend
+- **Data Storage & Messaging**: In-memory session storage; No database or message queue required
 
 ### Infrastructure & Operations
-- **Deployment & Runtime**: [DEPLOY_RUNTIME]
-  <!-- Example: Docker containers, Kubernetes orchestration, AWS EKS -->
-- **Observability Standards**: [OBSERVABILITY]
-  <!-- Example: Structured logging (JSON), Prometheus metrics, Jaeger tracing, Grafana dashboards -->
-- **Performance & SLO Budgets**: [PERF_SLOS]
-  <!-- Example: 99.9% uptime, <200ms API response, <2s page load -->
-- **Compatibility & Migration Policy**: [COMPAT_POLICY]
-  <!-- Example: Semantic versioning, backward compatibility for 2 versions, blue-green deployments -->
+- **Deployment & Runtime**: Local development with uvicorn; Static files served by FastAPI
+- **Observability Standards**: Structured logging via Python logging module
+- **Performance & SLO Budgets**: API response <100ms; UI interactions <50ms
+- **Compatibility & Migration Policy**: Semantic versioning; API versioning for breaking changes
 
 ## AI-Generated Code & Open Source Licensing
 
@@ -330,10 +340,21 @@ If AI-generated code appears problematic:
 **For complete policy details, usage guidelines, tracking requirements, and remediation playbook, see [OSS Licensing Policy Reference](../.gobuildme/templates/reference/oss-licensing-policy.md).**
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
+This Constitution supersedes all other development practices for the GBM Test Calc project.
+
+### Amendment Process
+1. Proposed changes MUST be documented with rationale
+2. Version number MUST be incremented according to semantic versioning:
+   - MAJOR: Breaking changes to core principles
+   - MINOR: New principles or sections added
+   - PATCH: Clarifications or typo fixes
+3. All amendments MUST update the "Last Amended" date
+
+### Compliance Requirements
+- All PRs MUST verify compliance with Core Principles
+- Complexity additions MUST be justified with documented rationale
+- Quality gates MUST pass before merge
 
 ## Organizational Rules (Fixed)
 
@@ -415,12 +436,11 @@ The following security practices are mandatory and apply to all services, CLIs, 
 - Incident Preparedness
   - Provide runbooks for security‑relevant components and define alert thresholds; ensure alerts integrate with on‑call.
 
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+**Version**: 1.0.0 | **Ratified**: 2026-01-15 | **Last Amended**: 2026-01-15
 
 ## VI. Research and Fact-Checking Standards
 
-> **Last Updated**: [Date]
+> **Last Updated**: 2026-01-15
 > **Philosophy**: Correction Over Blocking - Fact-checking improves research quality without stopping workflow progression.
 
 ### 6.1 Core Principles

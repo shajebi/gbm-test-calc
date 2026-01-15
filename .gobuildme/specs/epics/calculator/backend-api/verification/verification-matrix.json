@@ -1,0 +1,208 @@
+{
+  "feature": "calculator--backend-api",
+  "pr_slice": "PR-1: FastAPI backend with calculation and memory endpoints",
+  "epic": "calculator",
+  "persona": "fullstack_engineer",
+  "created_at": "2026-01-15T16:10:54Z",
+  "verification_items": [
+    {
+      "id": "V1",
+      "type": "acceptance_criteria",
+      "ac_id": "AC-001",
+      "description": "Given valid operands and operator (+), When POST /calculate, Then return sum with 200 status",
+      "verification_method": {"type": "builtin", "ref": "run_tests"},
+      "passes": false,
+      "verified_at": null,
+      "verified_in_session": null,
+      "verification_evidence": null
+    },
+    {
+      "id": "V2",
+      "type": "acceptance_criteria",
+      "ac_id": "AC-002",
+      "description": "Given valid operands and operator (-), When POST /calculate, Then return difference with 200 status",
+      "verification_method": {"type": "builtin", "ref": "run_tests"},
+      "passes": false,
+      "verified_at": null,
+      "verified_in_session": null,
+      "verification_evidence": null
+    },
+    {
+      "id": "V3",
+      "type": "acceptance_criteria",
+      "ac_id": "AC-003",
+      "description": "Given valid operands and operator (*), When POST /calculate, Then return product with 200 status",
+      "verification_method": {"type": "builtin", "ref": "run_tests"},
+      "passes": false,
+      "verified_at": null,
+      "verified_in_session": null,
+      "verification_evidence": null
+    },
+    {
+      "id": "V4",
+      "type": "acceptance_criteria",
+      "ac_id": "AC-004",
+      "description": "Given valid operands and non-zero divisor (/), When POST /calculate, Then return quotient with 200",
+      "verification_method": {"type": "builtin", "ref": "run_tests"},
+      "passes": false,
+      "verified_at": null,
+      "verified_in_session": null,
+      "verification_evidence": null
+    },
+    {
+      "id": "V5",
+      "type": "acceptance_criteria",
+      "ac_id": "AC-005",
+      "description": "Given session exists, When POST /memory/add with value, Then add to memory and return new value",
+      "verification_method": {"type": "builtin", "ref": "run_tests"},
+      "passes": false,
+      "verified_at": null,
+      "verified_in_session": null,
+      "verification_evidence": null
+    },
+    {
+      "id": "V6",
+      "type": "acceptance_criteria",
+      "ac_id": "AC-006",
+      "description": "Given session exists, When POST /memory/subtract with value, Then subtract and return new value",
+      "verification_method": {"type": "builtin", "ref": "run_tests"},
+      "passes": false,
+      "verified_at": null,
+      "verified_in_session": null,
+      "verification_evidence": null
+    },
+    {
+      "id": "V7",
+      "type": "acceptance_criteria",
+      "ac_id": "AC-007",
+      "description": "Given session with memory, When GET /memory, Then return current memory value",
+      "verification_method": {"type": "builtin", "ref": "run_tests"},
+      "passes": false,
+      "verified_at": null,
+      "verified_in_session": null,
+      "verification_evidence": null
+    },
+    {
+      "id": "V8",
+      "type": "acceptance_criteria",
+      "ac_id": "AC-008",
+      "description": "Given session with memory, When DELETE /memory, Then reset memory to 0",
+      "verification_method": {"type": "builtin", "ref": "run_tests"},
+      "passes": false,
+      "verified_at": null,
+      "verified_in_session": null,
+      "verification_evidence": null
+    },
+    {
+      "id": "V9",
+      "type": "acceptance_criteria",
+      "ac_id": "AC-E01",
+      "description": "Given division by zero, When POST /calculate, Then return 400 with DIVISION_BY_ZERO error code",
+      "verification_method": {"type": "builtin", "ref": "run_tests"},
+      "passes": false,
+      "verified_at": null,
+      "verified_in_session": null,
+      "verification_evidence": null
+    },
+    {
+      "id": "V10",
+      "type": "acceptance_criteria",
+      "ac_id": "AC-E02",
+      "description": "Given invalid operator, When POST /calculate, Then return 400 with INVALID_OPERATOR error",
+      "verification_method": {"type": "builtin", "ref": "run_tests"},
+      "passes": false,
+      "verified_at": null,
+      "verified_in_session": null,
+      "verification_evidence": null
+    },
+    {
+      "id": "V11",
+      "type": "acceptance_criteria",
+      "ac_id": "AC-E03",
+      "description": "Given missing required fields, When POST any endpoint, Then return 422 with validation errors",
+      "verification_method": {"type": "builtin", "ref": "run_tests"},
+      "passes": false,
+      "verified_at": null,
+      "verified_in_session": null,
+      "verification_evidence": null
+    },
+    {
+      "id": "V12",
+      "type": "acceptance_criteria",
+      "ac_id": "AC-E04",
+      "description": "Given non-numeric operands, When POST /calculate, Then return 422 with type validation error",
+      "verification_method": {"type": "builtin", "ref": "run_tests"},
+      "passes": false,
+      "verified_at": null,
+      "verified_in_session": null,
+      "verification_evidence": null
+    },
+    {
+      "id": "V13",
+      "type": "acceptance_criteria",
+      "ac_id": "AC-B01",
+      "description": "Given very large numbers, When calculate, Then return result or 400 with overflow error",
+      "verification_method": {"type": "builtin", "ref": "run_tests"},
+      "passes": false,
+      "verified_at": null,
+      "verified_in_session": null,
+      "verification_evidence": null
+    },
+    {
+      "id": "V14",
+      "type": "acceptance_criteria",
+      "ac_id": "AC-B02",
+      "description": "Given new session (no memory), When GET /memory, Then return {memory: 0.0}",
+      "verification_method": {"type": "builtin", "ref": "run_tests"},
+      "passes": false,
+      "verified_at": null,
+      "verified_in_session": null,
+      "verification_evidence": null
+    },
+    {
+      "id": "V15",
+      "type": "acceptance_criteria",
+      "ac_id": "AC-B03",
+      "description": "Given negative result, When any calculation, Then return negative number correctly",
+      "verification_method": {"type": "builtin", "ref": "run_tests"},
+      "passes": false,
+      "verified_at": null,
+      "verified_in_session": null,
+      "verification_evidence": null
+    },
+    {
+      "id": "V16",
+      "type": "acceptance_criteria",
+      "ac_id": "AC-B04",
+      "description": "Given floating-point operands, When calculate, Then handle precision correctly",
+      "verification_method": {"type": "builtin", "ref": "run_tests"},
+      "passes": false,
+      "verified_at": null,
+      "verified_in_session": null,
+      "verification_evidence": null
+    },
+    {
+      "id": "V17",
+      "type": "acceptance_criteria",
+      "ac_id": "AC-P01",
+      "description": "Given any calculation request, When processed, Then respond within 100ms (p95)",
+      "verification_method": {"type": "builtin", "ref": "run_tests"},
+      "passes": false,
+      "verified_at": null,
+      "verified_in_session": null,
+      "verification_evidence": null
+    },
+    {
+      "id": "V18",
+      "type": "acceptance_criteria",
+      "ac_id": "AC-P02",
+      "description": "Given memory operation, When processed, Then respond within 50ms (p95)",
+      "verification_method": {"type": "builtin", "ref": "run_tests"},
+      "passes": false,
+      "verified_at": null,
+      "verified_in_session": null,
+      "verification_evidence": null
+    }
+  ]
+}
+
