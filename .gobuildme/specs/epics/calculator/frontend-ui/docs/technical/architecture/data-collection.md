@@ -10,6 +10,9 @@
 {
   "directories": [
     ".",
+    ".docs",
+    ".docs/implementations",
+    ".docs/implementations/calculator-backend-api",
     ".pytest_cache",
     ".pytest_cache/v",
     ".pytest_cache/v/cache",
@@ -17,6 +20,16 @@
     ".augment/commands",
     ".ruff_cache",
     ".ruff_cache/0.14.11",
+    "tests",
+    "tests/unit",
+    "tests/unit/__pycache__",
+    "tests/unit/services",
+    "tests/integration",
+    "tests/integration/__pycache__",
+    "tests/__pycache__",
+    "tests/api",
+    "tests/api/contracts",
+    "tests/api/__pycache__",
     "docs",
     ".mypy_cache",
     ".mypy_cache/3.11",
@@ -48,9 +61,16 @@
     ".mypy_cache/3.11/logging",
     ".mypy_cache/3.11/email",
     ".mypy_cache/3.11/pydantic_core",
-    ".mypy_cache/3.11/src"
+    ".mypy_cache/3.11/src",
+    "src",
+    "src/__pycache__",
+    "src/routes",
+    "src/routes/__pycache__",
+    "src/services",
+    "src/services/__pycache__"
   ],
   "config_files": [
+    "pyproject.toml"
     ""
   ],
   "framework_indicators": [
@@ -64,6 +84,7 @@
 {
   "languages": {
     "javascript":        1,
+    "python":       25,
     "total": 0
   },
   "database_indicators": [
