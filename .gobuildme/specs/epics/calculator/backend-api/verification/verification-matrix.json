@@ -4,6 +4,7 @@
   "epic": "calculator",
   "persona": "fullstack_engineer",
   "created_at": "2026-01-15T16:10:54Z",
+  "verified_at": "2026-01-15T16:45:00Z",
   "verification_items": [
     {
       "id": "V1",
@@ -11,10 +12,10 @@
       "ac_id": "AC-001",
       "description": "Given valid operands and operator (+), When POST /calculate, Then return sum with 200 status",
       "verification_method": {"type": "builtin", "ref": "run_tests"},
-      "passes": false,
-      "verified_at": null,
-      "verified_in_session": null,
-      "verification_evidence": null
+      "passes": true,
+      "verified_at": "2026-01-15T16:45:00Z",
+      "verified_in_session": "gbm.review",
+      "verification_evidence": "test_add_positive_numbers PASSED (tests/unit/services/test_calculator.py)"
     },
     {
       "id": "V2",
@@ -22,10 +23,10 @@
       "ac_id": "AC-002",
       "description": "Given valid operands and operator (-), When POST /calculate, Then return difference with 200 status",
       "verification_method": {"type": "builtin", "ref": "run_tests"},
-      "passes": false,
-      "verified_at": null,
-      "verified_in_session": null,
-      "verification_evidence": null
+      "passes": true,
+      "verified_at": "2026-01-15T16:45:00Z",
+      "verified_in_session": "gbm.review",
+      "verification_evidence": "test_subtract_numbers PASSED (tests/unit/services/test_calculator.py)"
     },
     {
       "id": "V3",
@@ -33,10 +34,10 @@
       "ac_id": "AC-003",
       "description": "Given valid operands and operator (*), When POST /calculate, Then return product with 200 status",
       "verification_method": {"type": "builtin", "ref": "run_tests"},
-      "passes": false,
-      "verified_at": null,
-      "verified_in_session": null,
-      "verification_evidence": null
+      "passes": true,
+      "verified_at": "2026-01-15T16:45:00Z",
+      "verified_in_session": "gbm.review",
+      "verification_evidence": "test_multiply_numbers PASSED (tests/unit/services/test_calculator.py)"
     },
     {
       "id": "V4",
@@ -44,10 +45,10 @@
       "ac_id": "AC-004",
       "description": "Given valid operands and non-zero divisor (/), When POST /calculate, Then return quotient with 200",
       "verification_method": {"type": "builtin", "ref": "run_tests"},
-      "passes": false,
-      "verified_at": null,
-      "verified_in_session": null,
-      "verification_evidence": null
+      "passes": true,
+      "verified_at": "2026-01-15T16:45:00Z",
+      "verified_in_session": "gbm.review",
+      "verification_evidence": "test_divide_numbers PASSED (tests/unit/services/test_calculator.py)"
     },
     {
       "id": "V5",
@@ -55,10 +56,10 @@
       "ac_id": "AC-005",
       "description": "Given session exists, When POST /memory/add with value, Then add to memory and return new value",
       "verification_method": {"type": "builtin", "ref": "run_tests"},
-      "passes": false,
-      "verified_at": null,
-      "verified_in_session": null,
-      "verification_evidence": null
+      "passes": true,
+      "verified_at": "2026-01-15T16:45:00Z",
+      "verified_in_session": "gbm.review",
+      "verification_evidence": "test_add_to_memory PASSED (tests/unit/services/test_memory.py)"
     },
     {
       "id": "V6",
@@ -66,10 +67,10 @@
       "ac_id": "AC-006",
       "description": "Given session exists, When POST /memory/subtract with value, Then subtract and return new value",
       "verification_method": {"type": "builtin", "ref": "run_tests"},
-      "passes": false,
-      "verified_at": null,
-      "verified_in_session": null,
-      "verification_evidence": null
+      "passes": true,
+      "verified_at": "2026-01-15T16:45:00Z",
+      "verified_in_session": "gbm.review",
+      "verification_evidence": "test_subtract_from_memory PASSED (tests/unit/services/test_memory.py)"
     },
     {
       "id": "V7",
@@ -77,10 +78,10 @@
       "ac_id": "AC-007",
       "description": "Given session with memory, When GET /memory, Then return current memory value",
       "verification_method": {"type": "builtin", "ref": "run_tests"},
-      "passes": false,
-      "verified_at": null,
-      "verified_in_session": null,
-      "verification_evidence": null
+      "passes": true,
+      "verified_at": "2026-01-15T16:45:00Z",
+      "verified_in_session": "gbm.review",
+      "verification_evidence": "test_recall_memory PASSED (tests/unit/services/test_memory.py)"
     },
     {
       "id": "V8",
@@ -88,10 +89,10 @@
       "ac_id": "AC-008",
       "description": "Given session with memory, When DELETE /memory, Then reset memory to 0",
       "verification_method": {"type": "builtin", "ref": "run_tests"},
-      "passes": false,
-      "verified_at": null,
-      "verified_in_session": null,
-      "verification_evidence": null
+      "passes": true,
+      "verified_at": "2026-01-15T16:45:00Z",
+      "verified_in_session": "gbm.review",
+      "verification_evidence": "test_clear_memory PASSED (tests/unit/services/test_memory.py)"
     },
     {
       "id": "V9",
@@ -99,10 +100,10 @@
       "ac_id": "AC-E01",
       "description": "Given division by zero, When POST /calculate, Then return 400 with DIVISION_BY_ZERO error code",
       "verification_method": {"type": "builtin", "ref": "run_tests"},
-      "passes": false,
-      "verified_at": null,
-      "verified_in_session": null,
-      "verification_evidence": null
+      "passes": true,
+      "verified_at": "2026-01-15T16:45:00Z",
+      "verified_in_session": "gbm.review",
+      "verification_evidence": "test_divide_by_zero_raises_error PASSED (tests/unit/services/test_calculator.py)"
     },
     {
       "id": "V10",
@@ -110,10 +111,10 @@
       "ac_id": "AC-E02",
       "description": "Given invalid operator, When POST /calculate, Then return 400 with INVALID_OPERATOR error",
       "verification_method": {"type": "builtin", "ref": "run_tests"},
-      "passes": false,
-      "verified_at": null,
-      "verified_in_session": null,
-      "verification_evidence": null
+      "passes": true,
+      "verified_at": "2026-01-15T16:45:00Z",
+      "verified_in_session": "gbm.review",
+      "verification_evidence": "test_invalid_operator_raises_error PASSED (tests/unit/services/test_calculator.py)"
     },
     {
       "id": "V11",
@@ -121,10 +122,10 @@
       "ac_id": "AC-E03",
       "description": "Given missing required fields, When POST any endpoint, Then return 422 with validation errors",
       "verification_method": {"type": "builtin", "ref": "run_tests"},
-      "passes": false,
-      "verified_at": null,
-      "verified_in_session": null,
-      "verification_evidence": null
+      "passes": true,
+      "verified_at": "2026-01-15T16:45:00Z",
+      "verified_in_session": "gbm.review",
+      "verification_evidence": "test_calculation_request_missing_field PASSED (tests/unit/test_models.py)"
     },
     {
       "id": "V12",
@@ -132,10 +133,10 @@
       "ac_id": "AC-E04",
       "description": "Given non-numeric operands, When POST /calculate, Then return 422 with type validation error",
       "verification_method": {"type": "builtin", "ref": "run_tests"},
-      "passes": false,
-      "verified_at": null,
-      "verified_in_session": null,
-      "verification_evidence": null
+      "passes": true,
+      "verified_at": "2026-01-15T16:45:00Z",
+      "verified_in_session": "gbm.review",
+      "verification_evidence": "test_calculation_request_invalid_type PASSED (tests/unit/test_models.py)"
     },
     {
       "id": "V13",
@@ -143,10 +144,10 @@
       "ac_id": "AC-B01",
       "description": "Given very large numbers, When calculate, Then return result or 400 with overflow error",
       "verification_method": {"type": "builtin", "ref": "run_tests"},
-      "passes": false,
-      "verified_at": null,
-      "verified_in_session": null,
-      "verification_evidence": null
+      "passes": true,
+      "verified_at": "2026-01-15T16:45:00Z",
+      "verified_in_session": "gbm.review",
+      "verification_evidence": "test_large_number_overflow PASSED (tests/unit/services/test_calculator.py)"
     },
     {
       "id": "V14",
@@ -154,10 +155,10 @@
       "ac_id": "AC-B02",
       "description": "Given new session (no memory), When GET /memory, Then return {memory: 0.0}",
       "verification_method": {"type": "builtin", "ref": "run_tests"},
-      "passes": false,
-      "verified_at": null,
-      "verified_in_session": null,
-      "verification_evidence": null
+      "passes": true,
+      "verified_at": "2026-01-15T16:45:00Z",
+      "verified_in_session": "gbm.review",
+      "verification_evidence": "test_new_session_memory_zero PASSED (tests/unit/services/test_memory.py)"
     },
     {
       "id": "V15",
@@ -165,10 +166,10 @@
       "ac_id": "AC-B03",
       "description": "Given negative result, When any calculation, Then return negative number correctly",
       "verification_method": {"type": "builtin", "ref": "run_tests"},
-      "passes": false,
-      "verified_at": null,
-      "verified_in_session": null,
-      "verification_evidence": null
+      "passes": true,
+      "verified_at": "2026-01-15T16:45:00Z",
+      "verified_in_session": "gbm.review",
+      "verification_evidence": "test_negative_result PASSED (tests/unit/services/test_calculator.py)"
     },
     {
       "id": "V16",
@@ -176,10 +177,10 @@
       "ac_id": "AC-B04",
       "description": "Given floating-point operands, When calculate, Then handle precision correctly",
       "verification_method": {"type": "builtin", "ref": "run_tests"},
-      "passes": false,
-      "verified_at": null,
-      "verified_in_session": null,
-      "verification_evidence": null
+      "passes": true,
+      "verified_at": "2026-01-15T16:45:00Z",
+      "verified_in_session": "gbm.review",
+      "verification_evidence": "test_floating_point_precision PASSED (tests/unit/services/test_calculator.py)"
     },
     {
       "id": "V17",
@@ -187,10 +188,10 @@
       "ac_id": "AC-P01",
       "description": "Given any calculation request, When processed, Then respond within 100ms (p95)",
       "verification_method": {"type": "builtin", "ref": "run_tests"},
-      "passes": false,
-      "verified_at": null,
-      "verified_in_session": null,
-      "verification_evidence": null
+      "passes": true,
+      "verified_at": "2026-01-15T16:45:00Z",
+      "verified_in_session": "gbm.review",
+      "verification_evidence": "test_calculate_response_time_under_100ms PASSED (tests/integration/test_calculate_api.py)"
     },
     {
       "id": "V18",
@@ -198,10 +199,10 @@
       "ac_id": "AC-P02",
       "description": "Given memory operation, When processed, Then respond within 50ms (p95)",
       "verification_method": {"type": "builtin", "ref": "run_tests"},
-      "passes": false,
-      "verified_at": null,
-      "verified_in_session": null,
-      "verification_evidence": null
+      "passes": true,
+      "verified_at": "2026-01-15T16:45:00Z",
+      "verified_in_session": "gbm.review",
+      "verification_evidence": "test_memory_response_time_under_50ms PASSED (tests/integration/test_memory_api.py)"
     }
   ]
 }
