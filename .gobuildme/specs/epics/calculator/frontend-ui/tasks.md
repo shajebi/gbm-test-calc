@@ -50,20 +50,20 @@ metadata:
 ---
 
 ## Phase 2: Setup
-**Gate**: All tasks `[x]` before Tests
+**Gate**: All tasks `[x]` before Tests ✅
 
-- [ ] 1 Create static file directory structure
-  - [ ] 1-1 Create `static/` directory at repo root
-  - [ ] 1-2 Create `static/css/` subdirectory
-  - [ ] 1-3 Create `static/js/` subdirectory
-- [ ] 2 Configure FastAPI static file serving in `src/main.py`
-  - [ ] 2-1 Import StaticFiles from fastapi.staticfiles
-  - [ ] 2-2 Mount `/static` to serve `static/` directory
-  - [ ] 2-3 Add route for `/` to serve `static/index.html`
-- [ ] 3 [P] Create test directory structure
-  - [ ] 3-1 Create `tests/js/unit/` directory
-  - [ ] 3-2 Create `tests/js/integration/` directory
-  - [ ] 3-3 Create Jest config `tests/js/package.json`
+- [x] 1 Create static file directory structure
+  - [x] 1-1 Create `static/` directory at repo root
+  - [x] 1-2 Create `static/css/` subdirectory
+  - [x] 1-3 Create `static/js/` subdirectory
+- [x] 2 Configure FastAPI static file serving in `src/main.py`
+  - [x] 2-1 Import StaticFiles from fastapi.staticfiles
+  - [x] 2-2 Mount `/static` to serve `static/` directory
+  - [x] 2-3 Add route for `/` to serve `static/index.html`
+- [x] 3 [P] Create test directory structure
+  - [x] 3-1 Create `tests/js/unit/` directory
+  - [x] 3-2 Create `tests/js/integration/` directory
+  - [x] 3-3 Create Jest config `tests/js/package.json`
 
 ---
 

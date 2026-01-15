@@ -1,0 +1,31 @@
+{
+  "name": "calculator-tests",
+  "version": "1.0.0",
+  "description": "Jest tests for calculator frontend",
+  "scripts": {
+    "test": "jest",
+    "test:unit": "jest --testPathPattern=unit",
+    "test:integration": "jest --testPathPattern=integration",
+    "test:coverage": "jest --coverage"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0"
+  },
+  "jest": {
+    "testEnvironment": "jsdom",
+    "roots": ["<rootDir>/unit", "<rootDir>/integration"],
+    "moduleFileExtensions": ["js"],
+    "testMatch": ["**/*.test.js", "**/test_*.js"],
+    "collectCoverageFrom": ["../../static/js/**/*.js"],
+    "coverageThreshold": {
+      "global": {
+        "branches": 85,
+        "functions": 85,
+        "lines": 85,
+        "statements": 85
+      }
+    }
+  }
+}
+
