@@ -132,68 +132,68 @@ metadata:
 *Write minimal code to make tests pass*
 
 ### T011: Implement Pydantic models
-- [ ] 12: Create `src/models.py` with request/response models
-- [ ] 12-1: Implement `CalculationRequest` model
-- [ ] 12-2: Implement `CalculationResponse` model
-- [ ] 12-3: Implement `MemoryValueRequest` model
-- [ ] 12-4: Implement `MemoryResponse` model
-- [ ] 12-5: Implement `ErrorResponse` model
-- [ ] 12-6: Run model tests - verify passing
+- [x] 12: Create `src/models.py` with request/response models
+- [x] 12-1: Implement `CalculationRequest` model
+- [x] 12-2: Implement `CalculationResponse` model
+- [x] 12-3: Implement `MemoryValueRequest` model
+- [x] 12-4: Implement `MemoryResponse` model
+- [x] 12-5: Implement `ErrorResponse` model
+- [x] 12-6: Run model tests - verify passing
 
 ### T012: Implement custom exceptions
-- [ ] 13: Create `src/exceptions.py` with custom errors
-- [ ] 13-1: Implement `DivisionByZeroError` exception
-- [ ] 13-2: Implement `InvalidOperatorError` exception
-- [ ] 13-3: Implement `OverflowError` exception
+- [x] 13: Create `src/exceptions.py` with custom errors
+- [x] 13-1: Implement `DivisionByZeroError` exception
+- [x] 13-2: Implement `InvalidOperatorError` exception
+- [x] 13-3: Implement `OverflowError` exception
 
 ### T013: Implement calculator service
-- [ ] 14: Create `src/services/calculator.py` with calculate function
-- [ ] 14-1: Implement `calculate(operand1, operand2, operator)` function
-- [ ] 14-2: Handle addition (+)
-- [ ] 14-3: Handle subtraction (-)
-- [ ] 14-4: Handle multiplication (*)
-- [ ] 14-5: Handle division (/) with zero check
-- [ ] 14-6: Raise `InvalidOperatorError` for unknown operators
-- [ ] 14-7: Run calculator tests - verify passing
+- [x] 14: Create `src/services/calculator.py` with calculate function
+- [x] 14-1: Implement `calculate(operand1, operand2, operator)` function
+- [x] 14-2: Handle addition (+)
+- [x] 14-3: Handle subtraction (-)
+- [x] 14-4: Handle multiplication (*)
+- [x] 14-5: Handle division (/) with zero check
+- [x] 14-6: Raise `InvalidOperatorError` for unknown operators
+- [x] 14-7: Run calculator tests - verify passing
 
 ### T014: Implement memory service
-- [ ] 15: Create `src/services/memory.py` with memory functions
-- [ ] 15-1: Create `_memory_store: dict[str, float]` global
-- [ ] 15-2: Implement `get_memory(session_id)` function
-- [ ] 15-3: Implement `set_memory(session_id, value)` function
-- [ ] 15-4: Implement `add_to_memory(session_id, value)` function
-- [ ] 15-5: Implement `subtract_from_memory(session_id, value)` function
-- [ ] 15-6: Implement `clear_memory(session_id)` function
-- [ ] 15-7: Run memory tests - verify passing
+- [x] 15: Create `src/services/memory.py` with memory functions
+- [x] 15-1: Create `_memory_store: dict[str, float]` global
+- [x] 15-2: Implement `get_memory(session_id)` function
+- [x] 15-3: Implement `set_memory(session_id, value)` function
+- [x] 15-4: Implement `add_to_memory(session_id, value)` function
+- [x] 15-5: Implement `subtract_from_memory(session_id, value)` function
+- [x] 15-6: Implement `clear_memory(session_id)` function
+- [x] 15-7: Run memory tests - verify passing
 
 ### T015: Implement FastAPI application
-- [ ] 16: Create `src/main.py` with FastAPI app
-- [ ] 16-1: Create FastAPI app instance with metadata
-- [ ] 16-2: Register exception handlers for custom errors
-- [ ] 16-3: Include routers
+- [x] 16: Create `src/main.py` with FastAPI app
+- [x] 16-1: Create FastAPI app instance with metadata
+- [x] 16-2: Register exception handlers for custom errors
+- [x] 16-3: Include routers
 
 ### T016: Implement calculate route
-- [ ] 17: Create `src/routes/calculate.py` with endpoint
-- [ ] 17-1: Implement `POST /calculate` endpoint
-- [ ] 17-2: Parse `CalculationRequest` body
-- [ ] 17-3: Call calculator service
-- [ ] 17-4: Return `CalculationResponse`
-- [ ] 17-5: Run calculate API tests - verify passing
+- [x] 17: Create `src/routes/calculate.py` with endpoint
+- [x] 17-1: Implement `POST /calculate` endpoint
+- [x] 17-2: Parse `CalculationRequest` body
+- [x] 17-3: Call calculator service
+- [x] 17-4: Return `CalculationResponse`
+- [x] 17-5: Run calculate API tests - verify passing
 
 ### T017: Implement memory routes
-- [ ] 18: Create `src/routes/memory.py` with endpoints
-- [ ] 18-1: Add session ID dependency (extract or generate UUID)
-- [ ] 18-2: Implement `POST /memory/add` endpoint
-- [ ] 18-3: Implement `POST /memory/subtract` endpoint
-- [ ] 18-4: Implement `GET /memory` endpoint
-- [ ] 18-5: Implement `DELETE /memory` endpoint
-- [ ] 18-6: Run memory API tests - verify passing
+- [x] 18: Create `src/routes/memory.py` with endpoints
+- [x] 18-1: Add session ID dependency (extract or generate UUID)
+- [x] 18-2: Implement `POST /memory/add` endpoint
+- [x] 18-3: Implement `POST /memory/subtract` endpoint
+- [x] 18-4: Implement `GET /memory` endpoint
+- [x] 18-5: Implement `DELETE /memory` endpoint
+- [x] 18-6: Run memory API tests - verify passing
 
 ### T018: Implement health check
-- [ ] 19: Add `GET /health` endpoint in `src/main.py`
+- [x] 19: Add `GET /health` endpoint in `src/main.py`
 
 ### T019: Verify GREEN phase
-- [ ] 20: Run `uv run pytest --cov=src` - All tests should PASS
+- [x] 20: Run `uv run pytest --cov=src` - All 37 tests PASS ✓
 
 ---
 
