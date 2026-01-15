@@ -57,4 +57,3 @@ class TestCalculateAPI:
         elapsed = (time.time() - start) * 1000
         assert response.status_code == 200
         assert elapsed < 100, f"Response took {elapsed:.1f}ms, expected <100ms"
-

@@ -33,4 +33,3 @@ app.include_router(memory_router)
 def health_check() -> dict[str, str]:
     """Health check endpoint."""
     return {"status": "healthy"}
-

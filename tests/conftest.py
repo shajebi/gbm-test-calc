@@ -24,6 +24,7 @@ def session_headers(session_id: str) -> dict[str, str]:
 def app() -> Any:
     """FastAPI application instance."""
     from src.main import app
+
     return app
 
 
@@ -32,4 +33,3 @@ def client(app: Any) -> Generator[TestClient, None, None]:
     """Test client for the FastAPI application."""
     with TestClient(app) as c:
         yield c
-

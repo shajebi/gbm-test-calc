@@ -29,4 +29,3 @@ class OverflowError(CalculatorError):
 
     def __init__(self) -> None:
         super().__init__("Calculation result overflow", "OVERFLOW")
-

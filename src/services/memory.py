@@ -64,4 +64,3 @@ def clear_memory(session_id: str) -> None:
         session_id: Unique session identifier
     """
     _memory_store[session_id] = 0.0
-

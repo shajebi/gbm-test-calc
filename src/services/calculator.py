@@ -30,4 +30,3 @@ def calculate(operand1: float, operand2: float, operator: str) -> float:
         return operand1 / operand2
     else:
         raise InvalidOperatorError(operator)
-

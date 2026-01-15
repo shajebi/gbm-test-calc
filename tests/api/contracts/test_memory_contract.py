@@ -45,4 +45,3 @@ class TestMemoryContract:
         assert "value" in data
         assert data["value"] == 0.0
         assert "message" in data
-

@@ -61,6 +61,7 @@ class TestMemoryAPI:
     def test_memory_new_session_returns_zero(self, client: TestClient) -> None:
         """New session with no prior memory returns zero."""
         import uuid
+
         new_session = {"X-Session-ID": str(uuid.uuid4())}
         response = client.get("/memory", headers=new_session)
         assert response.status_code == 200
@@ -75,4 +76,3 @@ class TestMemoryAPI:
         elapsed = (time.time() - start) * 1000
         assert response.status_code == 200
         assert elapsed < 50, f"Response took {elapsed:.1f}ms, expected <50ms"
-

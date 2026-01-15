@@ -36,4 +36,3 @@ class ErrorResponse(BaseModel):
 
     error: str
     code: str
-

@@ -201,17 +201,17 @@ metadata:
 *Refactor while keeping tests green*
 
 ### T020: Apply code formatting and linting
-- [ ] 21: Run `uv run ruff format src/ tests/`
-- [ ] 21-1: Run `uv run ruff check src/ tests/ --fix`
-- [ ] 21-2: Run `uv run mypy src/` - Fix any type errors
+- [x] 21: Run `uv run ruff format src/ tests/`
+- [x] 21-1: Run `uv run ruff check src/ tests/ --fix`
+- [x] 21-2: Run `uv run mypy src/` - Fix any type errors
 
 ### T021: Add docstrings and type hints
-- [ ] 22: Add docstrings to all public functions
-- [ ] 22-1: Verify all function signatures have type hints
-- [ ] 22-2: Run mypy again - verify no errors
+- [x] 22: Add docstrings to all public functions
+- [x] 22-1: Verify all function signatures have type hints
+- [x] 22-2: Run mypy again - verify no errors
 
 ### T022: Verify REFACTOR phase
-- [ ] 23: Run `uv run pytest --cov=src` - All tests still PASS
+- [x] 23: Run `uv run pytest --cov=src` - All tests PASS, 97% coverage ✓
 
 ---
 

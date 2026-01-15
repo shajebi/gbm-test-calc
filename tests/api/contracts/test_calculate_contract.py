@@ -41,4 +41,3 @@ class TestCalculateContract:
         assert response.status_code == 422
         data = response.json()
         assert "detail" in data
-

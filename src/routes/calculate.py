@@ -21,4 +21,3 @@ def calculate_endpoint(request: CalculationRequest) -> CalculationResponse:
     result = calculate(request.operand1, request.operand2, request.operator)
     expression = f"{request.operand1} {request.operator} {request.operand2} = {result}"
     return CalculationResponse(result=result, expression=expression)
-

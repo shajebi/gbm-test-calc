@@ -62,4 +62,3 @@ def memory_clear(
     session_id = get_session_id(x_session_id)
     clear_memory(session_id)
     return MemoryResponse(value=0.0, message="Memory cleared")
-
