@@ -1,0 +1,3102 @@
+{
+  "version": "0.8.7",
+  "channel": "stable",
+  "agent": "auggie",
+  "script_type": "sh",
+  "min_cli_version": "0.8.7",
+  "installed_at": "2026-01-15T15:49:51.615379Z",
+  "source": "local_repo",
+  "files": [
+    {
+      "path": ".gobuildme/memory/constitution.md",
+      "sha256": "b5f9f93bab66bacfde8a9a7f5233ca1e039fad86526608114d3c42a51357654a",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/config/personas.yaml",
+      "sha256": "40d080dc8bed5f55b1dcfe98b3f1597ebf2b5f5595ce47f5e283be3e99de1b0c",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/gobuildme-docs/local-development.md",
+      "sha256": "61aaae72ddf733cf17cf9b1ad42dce74e3dbec44ce1ce5ecf3d8cae1ac5f47ee",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/gobuildme-docs/quickstart.md",
+      "sha256": "a79153043aed446074079da82ce660e3473ed58fc6a098cc8ed5e515b5e46fa1",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/gobuildme-docs/testing.md",
+      "sha256": "a7032eff176f1e7ce76910634d64c1ad175f2e8d3f82cb1e0dfc5629c24788c5",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/gobuildme-docs/installation.md",
+      "sha256": "1a91013e01c8f38347c661ead54c378a3f16cb1f123480f1a43be7b22e980867",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/personas/product_manager.yaml",
+      "sha256": "d1570a897fd83060a82d3a69b99f2b51fa5e1bdd2102d7a25c6105cca466d105",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/personas/architect.yaml",
+      "sha256": "0cb73a3919550b0fd11a829f889ad62746f732ac303b81e6b73a862a694d4fbf",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/personas/data_scientist.yaml",
+      "sha256": "a10ac52cc66d24f97423c71667eb36bf47ccc2c9b3b6fc34e155ee193799b23b",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/personas/sre.yaml",
+      "sha256": "9496112b116dc21325f23afc5f7de22c67b3a0ee36530ed86a5d965492e55cd1",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/personas/fullstack_engineer.yaml",
+      "sha256": "e0ffd419889812f392c19372f677c35a8680dfc6fff435506cb1ef4704b9ab07",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/personas/security_compliance.yaml",
+      "sha256": "763a98a0ce3ebd12cdaeab5ecef73bc29ee67df303af78c696c12defcd28955b",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/personas/ml_engineer.yaml",
+      "sha256": "021b11218e74b41f815ba11f436aeb742501937995ef45dcccce0d8d94dab528",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/personas/data_engineer.yaml",
+      "sha256": "6931b66965c2ce6e6ee41be53856b9fb2fa6a274f43f0e72ce0e8ab817129b28",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/personas/frontend_engineer.yaml",
+      "sha256": "0efcfb630bfe8f72c322eaa91bbf053cdc10c2b627d527d03e76bc607b6bde28",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/personas/maintainer.yaml",
+      "sha256": "02c62ef6c7e59c275f046d3c26ce2b2b9223a060628b4b1474f0dabb14e6ec6c",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/personas/qa_engineer.yaml",
+      "sha256": "5754c3de300dbd238e33fb267adb2ec037ee79cad639857d9bc6fcbdc44a7428",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/personas/backend_engineer.yaml",
+      "sha256": "b4a30c0e0f9ed9842ab72db315195552c74c965e3d1bee91cc2a8025b3a11ef4",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/scripts/validate-persona-gates.py",
+      "sha256": "1172a30e55c80bbb79f84b0a5da3b15fff8a1e1030db3ef043f9fc917ff717f2",
+      "strategy": "replace",
+      "mode": "755"
+    },
+    {
+      "path": ".gobuildme/scripts/verify-docs-distribution.sh",
+      "sha256": "b6a2fce1851ce6ba0a3c2a4ab5504ac9336662aaf37e6c9314e8b5783103ca84",
+      "strategy": "replace",
+      "mode": "755"
+    },
+    {
+      "path": ".gobuildme/scripts/upload-presigned-urls.py",
+      "sha256": "fc844c467331d4364a8d429fe6994601489a0b3982743c6a6d949ec7732e5aaf",
+      "strategy": "replace",
+      "mode": "755"
+    },
+    {
+      "path": ".gobuildme/scripts/cleanup-next-steps-duplicates.py",
+      "sha256": "774a9eb95f41c978c7c0b732623fd764fd60aa0f7e09f12a93176463d0eba9a5",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/scripts/generate-audit-report.sh",
+      "sha256": "5bfcad1ee7010a2e95c09d8d81b297eb4743bac7a81b33bda2706baa0eda1752",
+      "strategy": "replace",
+      "mode": "755"
+    },
+    {
+      "path": ".gobuildme/scripts/condense-next-steps.py",
+      "sha256": "aaa05b58f70fcd4dfd82f4e352ef4ce26f0872f01aed59e085b9c6b5ede652ec",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/scripts/setup-gfm-pypi.sh",
+      "sha256": "ab0f39e9237b154d679a98a3b26c5c66ce501996b1ecb919b6d88a3d0b69eeda",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/scripts/update-next-steps.py",
+      "sha256": "4ffccbab78b82918f1d471c59388064455a9703ebde7cdd71bf151794ac1f847",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/scripts/install-git-hooks.sh",
+      "sha256": "6ac35d95dc1c285d301cb5f6ff1c83b249c7d0480508be6378ad575d0d21131d",
+      "strategy": "replace",
+      "mode": "755"
+    },
+    {
+      "path": ".gobuildme/scripts/generate-spec-presigned-urls.py",
+      "sha256": "6ba32fd4709e861bf404f14c978d0662ab4789df41f1d39a12ccc6c5190933ca",
+      "strategy": "replace",
+      "mode": "755"
+    },
+    {
+      "path": ".gobuildme/scripts/generate-missing-persona-partials.py",
+      "sha256": "de77dfce9f9bb06fc5919b5f0797871c2b1117c358516d75a70d36937d8da913",
+      "strategy": "replace",
+      "mode": "755"
+    },
+    {
+      "path": ".gobuildme/scripts/apply-condensed-next-steps-all.py",
+      "sha256": "4324a6477bf6801ae1f7fa04e70ee7472f273695c8c68d4ad05dc955d9b1c49b",
+      "strategy": "replace",
+      "mode": "755"
+    },
+    {
+      "path": ".gobuildme/scripts/extract-artifacts.py",
+      "sha256": "c3b93e99b1b3d41709df61284c43655ed83e4054730fdac5a8ba419e25a5d54a",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/scripts/add-artifact-declarations.py",
+      "sha256": "4dc2449a787b582bbfb6b53c71ca0bce0efb7c4fbae09f5cf8a0c2d67d53c421",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/scripts/show-target-structure.sh",
+      "sha256": "3c65c75dcca7a2e0719c51e451d041c6494d7d4674235868a82168097a3ddc69",
+      "strategy": "replace",
+      "mode": "755"
+    },
+    {
+      "path": ".gobuildme/scripts/record-metadata.py",
+      "sha256": "54d2c1b7370d0a1511db27b97262c722218a40087ab5347fe3f09094195e73db",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/CLAUDE-template.md",
+      "sha256": "f3f657b193d78458bbfcf01704d0bae45fdc2ed0aae16056ed7a91208e5a32b7",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/agent-file-template.md",
+      "sha256": "2f548d20f004521559a6b095b7df633d45897278afe1e571fbffeae8cbe2f0c9",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/pm-analytics-report-template.md",
+      "sha256": "5d56ea393fb5d67452ca1b637eeed4376574a90e8395a0bf3f766db9476afc0a",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/pm-prd-template.md",
+      "sha256": "52fcbce012f1a2825682e798539b42ec31fdcbca15847ace12d3fab4a80cc059",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/vscode-settings.json",
+      "sha256": "9344b12718b5e08550ea9f1bf17bfc879ec04d445efe93c3fda007cb119de34e",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/design-template.md",
+      "sha256": "1246c9aba10f56b611c06094db64ed227ead52de55a25abb09ae20aa9bb60a69",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/quickstart-template.md",
+      "sha256": "17668435d3699cc8b3f3647075adac5ddee4d4215073e9d0d2f21367b3fbc1be",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/qa-test-tasks-template.md",
+      "sha256": "5590578cab664d0f371bbb6eb8eca0a0c5d96e55b9906c3406e6b9750cf323c1",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/verification-matrix-template.json",
+      "sha256": "5d84f2bd6ee840b5d28315475cde376234d834ee130f7c0691c34ffd561d573f",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/pm-technical-feasibility-template.md",
+      "sha256": "c621b5edb1c99ec0ad2288b92a49785bc57a00125155825ddc9834ccb671d04c",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/slo-template.yaml",
+      "sha256": "15ab94d2b08874d188cfcead7169db118106640ad92e61fb865963f0074501eb",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/pm-competitive-analysis-template.md",
+      "sha256": "41b25a0beec30f2df0dae7dd51bb28dffa9cda266a6d33889f9b26b3c54c53b0",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/pm-market-research-template.md",
+      "sha256": "fd55b0fda52b527b2492c52c2701928384db136a699760f6ba6e444c054deef1",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/.gitignore.template",
+      "sha256": "38fa90c418e4f3e604005ee2b8a513870e710b77bcd89b110d31ce036a153f2c",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/qa-config.yaml",
+      "sha256": "840a0104628a4fe53c2afc8f317ad168cfa8d1255a05d7a3fa2a9e56831c8413",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/checklist-template.md",
+      "sha256": "bcda2dc4379c1f2991dd9f7ed18cf64ce09a6657990599633a5689509acf474e",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/qa-test-plan-template.md",
+      "sha256": "f02f9d86ee934d95078565981ad1b3f84c60af35e15f529c54aeea49898410ca",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/gbm-progress-template.md",
+      "sha256": "8d4170b31fcb16082f3699e6b717a64122ef35ce3117d84b47cec4353a40543e",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/AGENTS-template.md",
+      "sha256": "ba562385e9475314e8244c634a98babd722f18b7887149c409cfa860cb9ba6da",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/Makefile.example.backup",
+      "sha256": "47f9d94bd824f760dbf7e86f656b2a58ec8960c5b77acac69c966ce38fa61848",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/tasks-template.md",
+      "sha256": "86165099bb41e21c7a3e0c2872efabc5f8f399786e315c5447bad0f2b827a410",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/Makefile.example",
+      "sha256": "dd21b46c047587261843663e6337cb583dea3413f34b84cc3541349c826717e6",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/spec-template.md",
+      "sha256": "a7f2bc019499eb5185bc2f5120d37fe8a8b75a88f41806cfd640a6641daf306d",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/pm-synthesis-template.md",
+      "sha256": "b1dd074464498e873dea4c228db38062d2926d7ae8de1868cab9487c7ba9f367",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/request-template.md",
+      "sha256": "d9c5cba6f4c3d0733184476623bf5fb82b590c96b51db75048f6e0e74b65726b",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/_concise-style.md",
+      "sha256": "9dbfe13841f4c6a2cdd0fdd6f61eeb20e6d1ad26aedaa8b1e858b92aa2a99a13",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/ac-overrides.yaml",
+      "sha256": "064f3de714cb2702df9afb3341f0ea7b3ab1b7f41d4100c4a4b922d229e6d8c5",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/implementation-summary-template.md",
+      "sha256": "61497ee1feacfe01b08eb76e46f9c7a16e92d73e6d83339c82027398900c3acb",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/plan-template.md",
+      "sha256": "88113e27f6973fe7cb4a301f263d32c57f5835a176b1a43af1c9ca4b31fa7276",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/memory/constitution.md",
+      "sha256": "b5f9f93bab66bacfde8a9a7f5233ca1e039fad86526608114d3c42a51357654a",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/config/slo.schema.json",
+      "sha256": "89785f761a17e4597a8edcf18fb3ba16907ae862940e48c5e4780048a26769a7",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/observability/otel-collector.yaml",
+      "sha256": "6bed0124008a5ed4ca58c50c9c185b95c7ced946070141e30c5f1cad9097fb15",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/agent-rules/specify-rules.md",
+      "sha256": "c1ee2220a7d08530446e2dd39026f583ed34d3e5246d20bcf9932f0768dc6323",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/commands/qa.plan.md",
+      "sha256": "f924105e5947df0b524f8ed038117247b2244e68b8b8bf563c72088b996887fc",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/commands/document.md",
+      "sha256": "61551f03952ca0a7ec3480a46c7b80c8847c703b45626b4ec5eb93790d391930",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/commands/constitution.md",
+      "sha256": "c3f93b421557f84c89f419bd08994160e012a53f4f48b11f04c8e620f68f8878",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/commands/validate-constitution.md",
+      "sha256": "b45c2c7ecaf2c8f20f3f30753823d50102bac1f402024b22ceaf7d196ff400b3",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/commands/qa.review-tests.md",
+      "sha256": "79601e3f587e2ad954ff2b3df0995d4fc1084706ba080981fc8ef1eeccd4c444",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/commands/implement.md",
+      "sha256": "e8e0d74fb1cd1ced48b2747ec7fc6b386107426251b59e9df80df5c3ff204c29",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/commands/architecture.md",
+      "sha256": "7be7d431d683ddbda2d3df685b1ff6e8ea48bb965b0cebbe81f71a2913562bfe",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/commands/validate-architecture.md",
+      "sha256": "31c5eadb2ddf114b96f6c02289ad68835ab5cb9c6a4fe3a8ac2cf9c40a241c86",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/commands/pm.handoff.md",
+      "sha256": "7534f9f887468c9801e74cfc2d4cd6b1595df33b3b507533e5791d2d16a267a1",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/commands/push.md",
+      "sha256": "f09121a9e1c4ee88c979514e0d73617b7f873c611c92a678e7128678affb8a86",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/commands/gbm.md",
+      "sha256": "00ec4c0d75ca8466b4f0878d3eb489bb8c4209ed60f01ec3fc9ee446e3253b1a",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/commands/preflight.md",
+      "sha256": "ebb870a4aef8d041c574d7805ccfa4b0843f1b4ff3f45f084dac081f6aee0e4e",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/commands/ci-matrix.md",
+      "sha256": "16cd113b51eaceddb75f1e5f7cf2835f578688a07e261d76ffcc19230ac12882",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/commands/analyze.md",
+      "sha256": "2180b08fd83b51b7d8f3d0cc680c92f38b2910267b8ad2813ca74c3c810f5369",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/commands/pm.stories.md",
+      "sha256": "fd391fa313cc0a26d21d4f9fb936a5e4dd8cd03962e136e0db7628aca1549cb8",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/commands/fact-check.md",
+      "sha256": "d5bb50129be2babdfda21dbc2dc0d8080f51901c57fb1911f38910e769690bef",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/commands/help.md",
+      "sha256": "270987868be8c13450d2453a4cd6e86fb1d2222c5ed093c8d7972d9776b1fec1",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/commands/tests.md",
+      "sha256": "da47eca0bc7f6a8c9569bbbd6692e175952e160ea4fc362e50bf885d8784443f",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/commands/pm.align.md",
+      "sha256": "e8d3a90822d01510ab49e5838fd8ce4bbe7018c997b922de4916332ddde3c88c",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/commands/tasks.md",
+      "sha256": "7e5610cd779135124d7ed45829ff8c62abe08c75d76e65d609e352374765aa20",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/commands/clarify.md",
+      "sha256": "c3f700f038e28ed32bd0be1da14ff8f9e7a83e6a56bec9dff39181243fcdda16",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/commands/branch-status.md",
+      "sha256": "dd03f5664d04ee10c562ae4f4cf34ac26db3cb4e897e762827053abb7e96e033",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/commands/pm.research.md",
+      "sha256": "7be57b59f8c67c451531e4d865fa8a519a3d5b7dfe74be7b80edd464e855ffec",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/commands/qa.implement.md",
+      "sha256": "638bf5b0a2c7cae1c050a4fda3c996e3612c8baebd7675a219926f204599dad8",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/commands/ci-setup.md",
+      "sha256": "ad219fecea95c3dd159c5d43fe938f208e3a565b3877cec9a51aaf9b9e73cac1",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/commands/upload-spec.md",
+      "sha256": "b0d6e3b0cf1131de944f63697c0fba32a25b3546f7a7c6956b4bc9b3a26678de",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/commands/qa.scaffold-tests.md",
+      "sha256": "9d3c6296dca743a0943c87f2dc2d7e84361ab5d157795d8144530cc33d802b81",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/commands/checklist.md",
+      "sha256": "f6dff9292e6d706d03af1704f37520b3354c86f5ea7248928c564ae1b116ea65",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/commands/pm.validate-problem.md",
+      "sha256": "f141421cd4f5355d0f94afd9ca695f229656c896cf50e92f25ddca79236050c7",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/commands/telemetry-check.md",
+      "sha256": "2a7a475503f9a2a972ca54058ed9ab736669cc4219c03dff12e79f510d01ee1d",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/commands/pm.interview.md",
+      "sha256": "6fe41a6e1f668b662fe3bbd23ec1a96d1d258a8a237ff5b67a38b24e2e517a40",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/commands/qa.tasks.md",
+      "sha256": "41d84013b8346e14ac8c1581122e29f5f0feb7ee3d15aee346b7d64d09865e0e",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/commands/plan.md",
+      "sha256": "c6c2b433d026230e28564218b709bbef441707d6e856c7cdd5708fd6e166ecbe",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/commands/pm.prd.md",
+      "sha256": "edf0abedd0b1a789f7f98a4b81e0a13d5db97e2e49f7d478e0ba83a7a03cf5eb",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/commands/design.md",
+      "sha256": "5bf945d688f54caadd135eb25cc006a187d0c81cb66ad172956bfc9af02a4c82",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/commands/docs.md",
+      "sha256": "67891e1510dfeaa86fe03f33dea713dc5380408187aeadf33a7b00701272aef6",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/commands/security-setup.md",
+      "sha256": "3ee79822040ccda42083254a5bf7048f33d6bad3db39ec10284001af952955c8",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/commands/request.md",
+      "sha256": "f63fb7cf3c3f423b16cb16807b99d9ef2968ba3f13fe727a934fd27dc3c50c9b",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/commands/specify.md",
+      "sha256": "c53b0a536e576578e7b89dd22a3af74ad1c8eda0321cd2c76eb5c77721278572",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/commands/review.md",
+      "sha256": "7db9b1709c61895b6eae3d380a4d9ada3e1b27b0ea2107a5ab0a0cb0ffb20b10",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/commands/ready-to-push.md",
+      "sha256": "59e9c7801d4cdd184d6bea9d5b6cff53d6824b158668ab79d90dcb22d2f55a19",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/commands/qa.generate-fixtures.md",
+      "sha256": "22378a6ded817e5854b0d1e4a8c120a4605d22578906bd5f8eb2562d80f5623d",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/commands/persona.md",
+      "sha256": "9158db82e6e2e406c5ba28734174df7164c53b2664067db2b8c5d5e09c526ca1",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/commands/validate-conventions.md",
+      "sha256": "b245f26bf69aa72209adc2b6e47c7b8b5c6957c973a9e45a59b250a1cc0c2b5e",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/commands/pm.discover.md",
+      "sha256": "5b3fd18dfdd7291865489f3e19c60e5f7e2aeb19d99e8abcb25efd3b32b751c6",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/github-workflows/augment-code-analysis.yml",
+      "sha256": "97e9ff20f5221e2d705788dbe5e79260e2ebaa788180bcd81ab05c1556417fb9",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/github-workflows/basic-ci.yml",
+      "sha256": "7a6e25211275efba3d2831465220360ee59225e1a2c2f989b568331b9274cf87",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/github-workflows/intelligent-pr-review.yml",
+      "sha256": "ae84707b78847d87a0e583679e210bce2f6c1eb684533dd24c2015ffdf4a6ff5",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/github-workflows/enhanced-security.yml",
+      "sha256": "075657a11fa3ddb14a086e1201de187b91e30326cd7219998c20456c8b970389",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/github-workflows/enhanced-pr-review.yml",
+      "sha256": "f12953607e55f92edcec57e693b50e70144511096e70bd3e6fa91e6e6776e065",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/github-workflows/pr-review.yml",
+      "sha256": "45a56fc2a6d77b276feb036477ad8c25dc2d09d549e9f2533f9fed0cfe81f1bb",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/github-workflows/comprehensive-ci.yml",
+      "sha256": "6b809ff4dd96d4fa9e040c931dfe0797e45bf8d83acd37d926386d29ce79601b",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/github-workflows/README.md",
+      "sha256": "4802edf6bc8b583c0c7db95e7dcaf8a69f0933082a8d0e884c12664a1b2f9bb3",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/github-workflows/release-please.yml",
+      "sha256": "e3cc7e2094c503b67cebfb8233817065dcdb583d83f17d8555737b734a9225db",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/github-workflows/observability-ci.yml",
+      "sha256": "77e4588d1e81872033479183c1f9f285649a7322aee353eefa8f268bb1caf70d",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/github-workflows/slo-lint.yml",
+      "sha256": "efdc50a17e511b5e50f97ebfc995a9134da9316a664b3032532512b626c92850",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/reference/pm-interview-templates.md",
+      "sha256": "a057f6af4c95240718bb99ee83adfb035193940c97d96c1e341999b810366af2",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/reference/participants-loading.md",
+      "sha256": "6a58d30abda74f00c934f5e2d5549e1079835fdbf7d7cdb899ca401edfb57a75",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/reference/pm-handoff-templates.md",
+      "sha256": "3f3a7e1e38f0b3e3cd43b0f383c92d04c281f72b175ab4a24fe2ab3244c8adb7",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/reference/architecture-context-loading.md",
+      "sha256": "8ccd69a80cb9c05a956f232d0506f863e207e3443fbe1fe55571f4bbb86369bb",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/reference/pm-research-templates.md",
+      "sha256": "e3c2abad0be830a8afdea02ed400d70586c66087fc178df9cede373dbe44ea37",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/reference/prerequisite-validation.md",
+      "sha256": "3ff16bd9beea0da3b0ad69489ed09f4b77cca867c1fb77b6e61f61097ff90161",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/reference/pm-validation-template.md",
+      "sha256": "974532283de6ba06a6b371643975a0e360e1a4699815d19e134aab349a00e854",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/reference/help-workflows.md",
+      "sha256": "7d972db917d5f3b0718caf5a1db504b7f7f7998adfec9bcd82b7d38d287448e3",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/reference/persona-next-steps.md",
+      "sha256": "19d01e5acd8b3e1e5376906c4d2ab3ebf7b2bc60b94903c97c80ffe8bf3dcf3e",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/reference/pm-stories-templates.md",
+      "sha256": "a07e2d0995cc1447589c80fb6f968ca4798560c548b77053d9abab29cbdadef2",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/reference/oss-licensing-policy.md",
+      "sha256": "f34cbaa9900606e8ec7731755c22a417452b4956e88d7c915493b2a99125d85f",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/agent_templates/gemini/GEMINI.md",
+      "sha256": "5eef533af4a6ba778f12211e3944b16c23d47e110d56d61f4ad6c9543b2eb64e",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/agent_templates/qwen/QWEN.md",
+      "sha256": "d4e58030495e58ac9d6f208c672d9a4cf51778e197dbab39d544644b2a2dfa54",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/config/personas.yaml",
+      "sha256": "40d080dc8bed5f55b1dcfe98b3f1597ebf2b5f5595ce47f5e283be3e99de1b0c",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/definitions/product_manager.yaml",
+      "sha256": "d1570a897fd83060a82d3a69b99f2b51fa5e1bdd2102d7a25c6105cca466d105",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/definitions/architect.yaml",
+      "sha256": "0cb73a3919550b0fd11a829f889ad62746f732ac303b81e6b73a862a694d4fbf",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/definitions/data_scientist.yaml",
+      "sha256": "a10ac52cc66d24f97423c71667eb36bf47ccc2c9b3b6fc34e155ee193799b23b",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/definitions/sre.yaml",
+      "sha256": "9496112b116dc21325f23afc5f7de22c67b3a0ee36530ed86a5d965492e55cd1",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/definitions/fullstack_engineer.yaml",
+      "sha256": "e0ffd419889812f392c19372f677c35a8680dfc6fff435506cb1ef4704b9ab07",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/definitions/security_compliance.yaml",
+      "sha256": "763a98a0ce3ebd12cdaeab5ecef73bc29ee67df303af78c696c12defcd28955b",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/definitions/ml_engineer.yaml",
+      "sha256": "021b11218e74b41f815ba11f436aeb742501937995ef45dcccce0d8d94dab528",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/definitions/data_engineer.yaml",
+      "sha256": "6931b66965c2ce6e6ee41be53856b9fb2fa6a274f43f0e72ce0e8ab817129b28",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/definitions/frontend_engineer.yaml",
+      "sha256": "0efcfb630bfe8f72c322eaa91bbf053cdc10c2b627d527d03e76bc607b6bde28",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/definitions/maintainer.yaml",
+      "sha256": "02c62ef6c7e59c275f046d3c26ce2b2b9223a060628b4b1474f0dabb14e6ec6c",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/definitions/qa_engineer.yaml",
+      "sha256": "5754c3de300dbd238e33fb267adb2ec037ee79cad639857d9bc6fcbdc44a7428",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/definitions/backend_engineer.yaml",
+      "sha256": "b4a30c0e0f9ed9842ab72db315195552c74c965e3d1bee91cc2a8025b3a11ef4",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/qa_engineer/constitution.md",
+      "sha256": "f13913a4fea7349e9acde41bbd6301f786af6b6c03fa95bc6f360f79cf79f2c4",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/qa_engineer/architecture.md",
+      "sha256": "32b48d6d27868708cd58d1ee0cffbb4ee05c8117b571b9851f7ccac27e124afe",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/qa_engineer/push.md",
+      "sha256": "f3a5fb6851caa9772053d0a3baddad9f295c74041e90f5dab08ff99add047745",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/qa_engineer/analyze.md",
+      "sha256": "242062c3b91067d6d4876ea0bbc062c0e8f5db65ff660c3054801a98f33a802e",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/qa_engineer/fact-check.md",
+      "sha256": "a2c9c552317309349c379729a24667c84dab744404caa26326df392e0a3eef77",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/qa_engineer/tests.md",
+      "sha256": "5f5115a66be7926eff11b1d99c3e5014ecbc6b280c4220a6c9f62348996a5e44",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/qa_engineer/tasks.md",
+      "sha256": "c65f9d8b2c7d4512d8a76e9acdc98aa3c35cece633e18cb71d025298e24fe18d",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/qa_engineer/clarify.md",
+      "sha256": "8b1445d4c7aaa4ab175e95923e6ec8d77fa2d3158a1b048c0137f4d5d355bf42",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/qa_engineer/checklist.md",
+      "sha256": "219b0620f4e49bfb6f6f3c660270b50a9f83e95d4122342e9685c2e74283f28d",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/qa_engineer/scaffold-tests.md",
+      "sha256": "e634f6c63b0d2913c5c67a635d68d241b1aae2e7856c6882f353518f666389c4",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/qa_engineer/request.md",
+      "sha256": "aaf390cd05afe0c3958e913cbb82d1a726306778ecd8641ec126cf14e5203aa7",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/qa_engineer/review.md",
+      "sha256": "0d0d4a61eb1733818e09f8acf5645ee4bef854acaf656fa5e5d734926032a91c",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/backend_engineer/constitution.md",
+      "sha256": "d15ed10481f09b2e54faa78788d9c260dd75eb51467f5f2c97a3924034de5fa3",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/backend_engineer/implement.md",
+      "sha256": "578a9f47fe6c8991eeeba472a8ec1103a29ff540a99dd996330e224d370bb103",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/backend_engineer/architecture.md",
+      "sha256": "f25c9696e92432d58ed7164de289036d07dccc5819156ed79a29da43b4fd858a",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/backend_engineer/push.md",
+      "sha256": "e6aa2348986468893bad4aba7a0bc385aa2de0175dea1a223d62e8e4377ca533",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/backend_engineer/analyze.md",
+      "sha256": "b3914ab815b41f18af56ede02e52fa9adbe82c469149f80f4d506904d561e312",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/backend_engineer/fact-check.md",
+      "sha256": "dfcffad9e8e4e7b15b537c4a935b9722332ca8e6484ac24816888d56e58888b9",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/backend_engineer/tests.md",
+      "sha256": "a6e8cc9217e4e1aa31f2f44c6382e91a7c6a08328c1459ff190b1fb549fb6164",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/backend_engineer/tasks.md",
+      "sha256": "cbe9122d095324ddc0efc40212ca8b113a56bcc02f1a5f3da70f7b68081f3c70",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/backend_engineer/clarify.md",
+      "sha256": "dc0c1d0d314c697aaad55aa3219710077cd1ce9d405053e9f0e900e60976f32b",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/backend_engineer/checklist.md",
+      "sha256": "f10cec763ffc7ca26e93a5a7e8fe24b2e46e7b9c4e3d663d0c9d387baf475cd9",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/backend_engineer/plan.md",
+      "sha256": "58b08acb88484dad51327f6c6385c65bc75df11038098ad55c1ca2932bacdb38",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/backend_engineer/request.md",
+      "sha256": "bba7be5ee3953bbeeae259518b473426aa6cc4ec4aa5696c92c3789ec630a737",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/backend_engineer/review.md",
+      "sha256": "b5aaf170fd23a0eb47b111c3876519aca8064660dbd1335e8eda17be031fdf07",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/product_manager/constitution.md",
+      "sha256": "6cb8e902ab20660ad5e7ae619c6ea1c7229af656caa761a1288c40a05c1fa07e",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/product_manager/prd.md",
+      "sha256": "8acbcbd2b0d0c6e6cbe9204eaa8acf7b051c475b6502b719bfbed92883bcc2f3",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/product_manager/architecture.md",
+      "sha256": "e2179d9002e3d5096ea6cd9e7bc09f598f9c4d9b7caf421ed09f4a17d86104ae",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/product_manager/push.md",
+      "sha256": "803ad33471837e9c362a82d74df0c385e01cfe3eb006db3fafeb32782f35b53b",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/product_manager/analyze.md",
+      "sha256": "7a2d4c967ec76e1b62c6e8986ee0e7a2b30919f21746dd722ed35f7e53bc2abe",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/product_manager/fact-check.md",
+      "sha256": "972d0cdd99ae6b53b1587a58bc5713aca380deeb8425b7f0f35c0da509e2bff9",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/product_manager/tasks.md",
+      "sha256": "6983e4127687f83d874af83afbde098c9ce60cf69e5154f852158a304b47c166",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/product_manager/clarify.md",
+      "sha256": "cc11288111fe74754d1b78c79e6574dd93cfde7b5fb68923ab6d6dac82004b7b",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/product_manager/checklist.md",
+      "sha256": "c45928ae5e224c445263ba2f9ee37937c4e6f742e7090449762273bf04284092",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/product_manager/request.md",
+      "sha256": "b26649716e2cfe3f4f9e0c09038f6e60eef4f3d129387c599f783aed7dcfe9ee",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/product_manager/specify.md",
+      "sha256": "65b925213482ba3c59d6ae18604da86317664ee8f645d92f843e6c62b11e9ae4",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/product_manager/review.md",
+      "sha256": "3470de8fc8940bd891b61ed77549fe08162f85cb888346fd943d5310de3c903e",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/maintainer/constitution.md",
+      "sha256": "dfe30835a3df4d91765ffa6e4e1257af9207bf4fdccf8a315ffa7d4bd3709d22",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/maintainer/architecture.md",
+      "sha256": "4025f728e5f900c8182d94b2ea536a4cb728a6383908e6132b1ffd90dcba4af5",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/maintainer/push.md",
+      "sha256": "e537feec32778b938e447e364195f257fa5643984767aa2b64df1f703a80e5d6",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/maintainer/analyze.md",
+      "sha256": "271ab6a5f5fd85f83292ae328d87492584928e0724987a31b2a6c0fe304c8c1c",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/maintainer/fact-check.md",
+      "sha256": "0cddfa540fd081a481db8bee5ac7ee94c40dd847d4ce93dcc8f5f6c7acb4986f",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/maintainer/tasks.md",
+      "sha256": "8061db99743e860dceb502fc925aad00983e4222ad314afd4e5bca212d2c77fe",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/maintainer/clarify.md",
+      "sha256": "7f6c5e85130e466ce4390efaa9240f902c20c92383a2ebd4b510cf50be67bca8",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/maintainer/request.md",
+      "sha256": "efed08d40553902f32310078f6d09af72d21f0d655d347c600c734ba51032d51",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/maintainer/review.md",
+      "sha256": "dda2cf5871c2f8791a0ec3329481f99637b1c69bf8f9a2006221c61c6fe39813",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/architect/constitution.md",
+      "sha256": "333a26177d38bce9f06aeaf6e4a48d5acc0aa96b250c7769130349496b850946",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/architect/architecture.md",
+      "sha256": "f8855f0129bb4ffa03d1d5f2eff233542dbb47fba771027a211781c9d11eabf8",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/architect/push.md",
+      "sha256": "bf2572d25f57ee7cb6e51e26155bb693d132108e754695b5b37f0da2e0dedcf8",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/architect/analyze.md",
+      "sha256": "e25843933690db098f86b33720ac680eee42a0c16896ae153de7b30d084e6fd6",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/architect/fact-check.md",
+      "sha256": "72cd8239dabfb385dca5eb81ee6be6a6800a463e14a9592816e811033eafd3f3",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/architect/tasks.md",
+      "sha256": "b72e1b3fa3128f0ccab32b6d16cae22ee9169b8b18341f65b2d88535dd12ff50",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/architect/clarify.md",
+      "sha256": "55269d936b11bdf776b8601b629ca8967049d972a90b76be8c7b5a694a16bdda",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/architect/plan.md",
+      "sha256": "f43d5b1e6a23dc4cdf498ee36ae762d362a45e89ab61e32c0a06050f91666c04",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/architect/request.md",
+      "sha256": "84d7d27a91a5d18013a55c32ed0f6b91eefba26d0d988a8b28dc5c36e8168b73",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/architect/specify.md",
+      "sha256": "9c7cc12432d254bec65470c602eb91d864821269d83c4026bb256f762b8bdbf4",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/architect/review.md",
+      "sha256": "95f2ae3d9efa9dd7ba254e782a88a6ddd8751dcbc7196f13265d546ef341fc0f",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/fullstack_engineer/constitution.md",
+      "sha256": "3d404529ce08ff8743460245451525e12d34e9768a7f08c6b19afbf0d0def0c9",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/fullstack_engineer/implement.md",
+      "sha256": "d07882807eead9e42fdd638f38b9f525aede1bf698c99cf85f65df1f9743109e",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/fullstack_engineer/architecture.md",
+      "sha256": "1a5d4cd1a890c3b1540712fbd67de687338f583ce8bb39e25ffc15b95a89c614",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/fullstack_engineer/push.md",
+      "sha256": "9387bd5825231b2e5db6fd70142bd62fd1ba3db5b06e6481b14d0e1187944758",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/fullstack_engineer/analyze.md",
+      "sha256": "2c19ff34236ee8c3124893ac4620cbdb0af757374a1f2e7bf036fe620c3b100a",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/fullstack_engineer/fact-check.md",
+      "sha256": "9e3ded4ec0a4c4715c329e8731615ceaf2b327fd309b4ccaeef7bbdfd733cd0c",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/fullstack_engineer/tests.md",
+      "sha256": "84fec38c62bfe874a4634b898664052dcba0ba9661a1f1743cdd916e2a3e247a",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/fullstack_engineer/tasks.md",
+      "sha256": "e78cc3e815081f341c969f8f317766ce85d3f4c12b4211a206c89bc9211be03c",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/fullstack_engineer/clarify.md",
+      "sha256": "131aaff4c964a21bdaa0c572e6005a0c15345f2c5c4e2b4906e86b52a6f0337d",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/fullstack_engineer/checklist.md",
+      "sha256": "36866f5425cb887ac0423e855efd83fc3afc9c814ff5bd9df8b0ce608f021974",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/fullstack_engineer/plan.md",
+      "sha256": "c565b9fd14897f508a6ee5fe7eb14a7fc9f0670c9f378d3829dd2f76e8898269",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/fullstack_engineer/request.md",
+      "sha256": "e91071799300909cbfad242614f3427e9b942b68ce5a34b30f54fce95d6e4ddc",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/fullstack_engineer/specify.md",
+      "sha256": "b63c7405cf6fb579b0a43dc6e5db51755f9e783759c4ee212fa80025d2881da7",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/fullstack_engineer/review.md",
+      "sha256": "74c8762361678f1afc160ef724c72845cf1a70d201a7d726295e85f2a9d34d69",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/data_scientist/constitution.md",
+      "sha256": "c59e58a0b2e8263cf5811968fc85f9c541448b73e35ddcb3b5255f1414a05a39",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/data_scientist/architecture.md",
+      "sha256": "8e9a8b11348fcbc97b35e62823a7085a0e1c1cdfd99c569b4ff019cd1eb123f7",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/data_scientist/push.md",
+      "sha256": "4373fde571947d3b9fda4252eb0f246b6b58dd0310d415ea99c3f6e3cad6e35f",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/data_scientist/analyze.md",
+      "sha256": "551bd31ce95a0cfc84d3fc69e81a9b38c9d29fe8b5cb8ce12a3142577d6aae81",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/data_scientist/fact-check.md",
+      "sha256": "ffeea7afe8f78bb71ecebe173b6f6a159aa47c249126f2ade442a80c4eb06184",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/data_scientist/tests.md",
+      "sha256": "a3c9a7f177d16144b448cbefa900f19c64ea19ac7b60ad8d898aa08513a6b743",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/data_scientist/tasks.md",
+      "sha256": "8d3e7f7e4b6aa8fb523dbac499f62789abd6e8c84ea700365cebc2cd3997a9cf",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/data_scientist/clarify.md",
+      "sha256": "bb1544dddcc60e9dd3afe209fbe76333d20c33b61eacb269b93f8bb62bfe3c48",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/data_scientist/checklist.md",
+      "sha256": "58cf8d8227ea48c3881ba2f1ded1e03fcdee46f7679a109e88717f49785f14a1",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/data_scientist/plan.md",
+      "sha256": "d414ec5551ef6f150efd5099f357af4f05d852f79c27febdf058a1119bd5e607",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/data_scientist/request.md",
+      "sha256": "d880234adef638d96e78187c2eae737d03552ec94cdb5a5f814ebeddc6ca14d2",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/data_scientist/specify.md",
+      "sha256": "6e09cabf8c59f3427a9b219f9aaff904b1dcb07b508ee7027ac620db37a33208",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/data_scientist/review.md",
+      "sha256": "9509c5804ca7724700b40a841afdafd1c898a29462a1e3f1b762b362e8203832",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/frontend_engineer/constitution.md",
+      "sha256": "c7feb7990c9acb2523b7de0336ec88672a6fc2cf3475f5258c0bc2765f641694",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/frontend_engineer/implement.md",
+      "sha256": "d3436884f09ce21a3e7c433cf057c5d3f6e9bae6ccba929724dd87734ecff30d",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/frontend_engineer/architecture.md",
+      "sha256": "8327d453994374a5ce0ba3cdb4ec30d632872728c9fc810d8c93e0d18dc72ce6",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/frontend_engineer/push.md",
+      "sha256": "22684cd3bc1db5eccd7d4323fa3b5120b5b153a189b62a6b5bc6469bd9a097c2",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/frontend_engineer/analyze.md",
+      "sha256": "da74f7d2df321b03487eca2e86c677d9a38499e79cd2ff39d7a48320c67fb172",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/frontend_engineer/fact-check.md",
+      "sha256": "dd5f82f1a96835c0ac2d6d3742486564df9ec9eff7ed27fa6eef9676cf5b3d5d",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/frontend_engineer/tests.md",
+      "sha256": "eae946fadb5120ffda42bc8d9a507977db507926b4f8b8b206f88c4804d7980e",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/frontend_engineer/tasks.md",
+      "sha256": "ca3067b258a18d6fed4c6076e0993caafe166d9058bdde9dfa623a3f8995b100",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/frontend_engineer/clarify.md",
+      "sha256": "ed91dbce5e4d44ad31047d70aac3c8d614362a6e00575daa7d4303d10254fa78",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/frontend_engineer/checklist.md",
+      "sha256": "6f70bf71ae1c7e0cef114dcd058d1b23d66c18c6481ccb3e5832177afa2be66e",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/frontend_engineer/plan.md",
+      "sha256": "d1b5411cbb21a2f6d355ef7a443496d8332af6ba3275b72e1e724de53d4b7bf6",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/frontend_engineer/request.md",
+      "sha256": "a63eeb21bc73e62a83f3040e0be5e50671036803d34eec9019e6edffd3b46754",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/frontend_engineer/specify.md",
+      "sha256": "2342f22d4eacf71702c4bf6bb31aec81c474f5e1360a5b91c215d6afe60add39",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/frontend_engineer/review.md",
+      "sha256": "4c58b7101d8e15c2da08feee900de4de8c4f5396a976b6b3649bb07e81d27452",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/ml_engineer/constitution.md",
+      "sha256": "1cc13b4a64d6c34822707989250f611cb7400abb1d07ad80ba3f96170843df71",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/ml_engineer/implement.md",
+      "sha256": "af7b6651c730b694562b5ca8d90b1c8b773b2a945336d54d7e1d6f29fa9a0b04",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/ml_engineer/architecture.md",
+      "sha256": "b5bb25faea8bffa734c36e67f71c300237260b4bfa12b4a2d43edbaa9e3aface",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/ml_engineer/push.md",
+      "sha256": "1e21de8f212676897a1da539d2b6a817a7d254d12acfd80aa4131332415f2729",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/ml_engineer/analyze.md",
+      "sha256": "83add483d5d92592e3b111d5e39d75ad6166377fe38e32412d8d17426446152a",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/ml_engineer/fact-check.md",
+      "sha256": "6d5c4ee23db0ed581e1bf1fb1582a3caacc637280573e4a7984ed258c75eedbf",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/ml_engineer/tests.md",
+      "sha256": "f33b845c9830b6f0505764302f29b208360eebc4d77a37e92e8372138dd6c2d7",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/ml_engineer/tasks.md",
+      "sha256": "821454dba14e6555da70ac017d802170bb784aedf5065d6a8b1c1c9894a06bbf",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/ml_engineer/clarify.md",
+      "sha256": "83ed94e1f56833b2c21e283c97523ea583aa7b02c741af5d5fd25c0bc8121607",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/ml_engineer/checklist.md",
+      "sha256": "39fa634dab0365b9638bac44124d87f808cf10a0efcf1978b3389fbbb7e544e3",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/ml_engineer/plan.md",
+      "sha256": "4d1e01d8320001205febf3bd85655f75f70ad82ae2180376c23a1ecb6509f757",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/ml_engineer/request.md",
+      "sha256": "2aa45e58aed53beb9c35bef45d0da1abdbcebdcc54cdcf3bf1dde9fb24c2a7cd",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/ml_engineer/specify.md",
+      "sha256": "fa9fa1197f88c2cad3bb8499df469fc6ae4eed672c86f8160e50418e74dc6a60",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/ml_engineer/review.md",
+      "sha256": "a7e32cc7d319fd5f03bee4f9d8921df2bec4a462d7b2e1fdca9acc270030832e",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/sre/constitution.md",
+      "sha256": "3bb000811dc3849d106f473d0e570a8973e3e63e5682f2f5e591963890d956ab",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/sre/implement.md",
+      "sha256": "172246f996053b5be5f542df58cd9f4fbc9865f1c3eb6ed7f7fb4db0413e5f1d",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/sre/architecture.md",
+      "sha256": "5f82b553a4d344898f9371b220ad686a1e5cdf850ae936011fb9106e884a00ac",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/sre/push.md",
+      "sha256": "f76889788ba61c34ff641159bd7d8eb893d3fc84ca2277b2eb465679da5e8646",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/sre/analyze.md",
+      "sha256": "4208ac7a968e8adc9f5e1c9aa87a523b548a2f379a6ef0c971c9aaf7dd7cd7f4",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/sre/fact-check.md",
+      "sha256": "d4c2c8b75a0f31065df3442e435d93cf49c991db56e05efad61d04537beee5ce",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/sre/tests.md",
+      "sha256": "d2b20b1e3b692dca428c7a90d5413af351d26a61943a9ebd69cc2ee0beca4dfb",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/sre/tasks.md",
+      "sha256": "3ff8ea4fd0125c298bb9da57dfcbe0d9627ebd2be056fa3752be20914971c72f",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/sre/clarify.md",
+      "sha256": "001288eeb58c5f397b51bd0757ab56a39390a545256093370e041a53328f56e2",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/sre/plan.md",
+      "sha256": "eb9668bbe0837b24b763901717678364c10b6f379563254e3a033878d25d22a5",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/sre/request.md",
+      "sha256": "ad7bf76302f94fc73403e7e581a524b90e2c9f8e3355c294f54680e3cc10021e",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/sre/review.md",
+      "sha256": "350d133aae7fbf685776d3ade28ee3361d836bcc2b2ae8ed6892eb32ad996061",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/security_compliance/constitution.md",
+      "sha256": "bfba6fd02f203ae2a47e88cbc7005778242557aee309f7c09e5cae0f4acbc199",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/security_compliance/architecture.md",
+      "sha256": "e1cfe21a7a0eaa0d0d2a83734effdd0654dbb446b79be90f45856c9659458fd5",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/security_compliance/push.md",
+      "sha256": "4fc0c981e4b32db501b1cfeaa3140455bc9d6fe7af7a897cc59a0a24134ca020",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/security_compliance/analyze.md",
+      "sha256": "2bd7c16c2f5723c33d1f3f1f6833c6046bb985a83b3a237638fbca20851d3781",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/security_compliance/fact-check.md",
+      "sha256": "2f968affd4126dd24ab8eba70b4feadfbd10078b77e5d3cb8812e00fa4359eea",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/security_compliance/tasks.md",
+      "sha256": "39f931d095a9581392c54c8378387f9faf4b5547607c1b9399dd1809c12236d7",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/security_compliance/clarify.md",
+      "sha256": "392d5b4d338063327a61f2cdab36ee3f47ef00b1e553b9cf7f65a508f7675fd0",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/security_compliance/checklist.md",
+      "sha256": "7c4a832392d08c3228c349ebe0739601ca0055a05acb7edf0c55c9a6f7e50141",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/security_compliance/plan.md",
+      "sha256": "e3f1e04fa3d28768be7af08c32227091388386486a3f786d3f2a257f3116df3f",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/security_compliance/request.md",
+      "sha256": "3a3227683313edbc26169f71e763d503c6eb1ddd315291518634a104c34edba9",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/security_compliance/review.md",
+      "sha256": "d7c9e515dbc84e48f46be2a3237ffbd1e3bb6b471222009f868e5b85a87179ae",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/data_engineer/constitution.md",
+      "sha256": "f9a52667b12a4f3009e05b724152a0f55ad273c134b47f32728e732b775edd6e",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/data_engineer/implement.md",
+      "sha256": "35510f4cbba5250eb374ed80e39e2c89f5ae4fd37890d1ac97966069cf826b7f",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/data_engineer/architecture.md",
+      "sha256": "5ca1cea808c9f41989c65cc0b175462c3e04002bfe931349f6f40a763ebade19",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/data_engineer/push.md",
+      "sha256": "0926bd7d0252e643e387475526c96fed7216361c0b520156a99b3c4b435395e6",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/data_engineer/analyze.md",
+      "sha256": "9ae6637d1a3dc04640bd46eb8af1c895ad6c2c685fa1c68a7c62448ff80b2484",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/data_engineer/fact-check.md",
+      "sha256": "9262fa3b2562d555f31346fab2f44dc1993359179a48d16979e709c59f863632",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/data_engineer/tests.md",
+      "sha256": "cbe0c214f11da447ad6d1e3260f49c1ba32e473a50b64a2170679892d811fc6b",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/data_engineer/tasks.md",
+      "sha256": "1de9a19dd2effe1cabaa5b976d7f0c6633d135e014907357b5a714da76e2fb93",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/data_engineer/clarify.md",
+      "sha256": "5dd02713908b18e44ab9b344dcece853410c0b79b082b66d02279fff2ce43395",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/data_engineer/checklist.md",
+      "sha256": "f15e413f220ee4ddcb67c17bc19e4ec8022b3df128a561e7abe309343853665c",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/data_engineer/plan.md",
+      "sha256": "d62b3f71271dd260b22c0e643ff2cc78980a62e3e103621d1d1763d4f68b37fd",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/data_engineer/request.md",
+      "sha256": "83e6495998716e04036509ec71ea7b72a5bb435cb44d40cc23f370962986a95c",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/data_engineer/specify.md",
+      "sha256": "c984dbe557834f35b56e725919c3789a28b95833a016844a9377c9843aaa2c0f",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/personas/partials/data_engineer/review.md",
+      "sha256": "04db5172dd6f0aa6621e5ac2d663b4ba276671d6ca57102b3b63f5d6c80d7786",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/test-templates/python/e2e-test.template",
+      "sha256": "c461483bb6d6cd6ef9ca44cf900eda90045c0d176b24800ff2a1a79a70a9421c",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/test-templates/python/database-test.template",
+      "sha256": "5e80d605155dfdbb9921cb6106e426480c73ac084337585dada9c60964e88de4",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/test-templates/python/external-service-test.template",
+      "sha256": "879e32098e2d458aa583a5612e50f80c77bbe3cfbf8993f201d9efbedead09cc",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/test-templates/python/queue-test.template",
+      "sha256": "9a9bcb1727d7dc5d1155b9ea0d55a910073cadcf31b5aa16e9a2ad8362975226",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/test-templates/python/api-rest-test.template",
+      "sha256": "17fe49c70fee6bf6f310d0a4e796ad01330bf855732a6ba5db23645a939be4fe",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/test-templates/python/unit-test.template",
+      "sha256": "cf5fb14f952586e3b88efa42704b54cf86ca149d61dab0ccaf266ae392e346e4",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/test-templates/java/e2e-test.template",
+      "sha256": "39061524e3655ad080ab4c5405f6dff12fa2994450f289b0e880a73c9e0aba07",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/test-templates/java/database-test.template",
+      "sha256": "c8fd6a9fd7958ff416fda2b8a4827acbd9171c37d22c8236e9606e4acd025a0a",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/test-templates/java/api-rest-test.template",
+      "sha256": "d894219f513d7153040a8c62548e525aa92cf53bd248d0ad9cf32f9eee30cf3a",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/test-templates/java/unit-test.template",
+      "sha256": "4a776037d3289760082fbd0feae2ce63eac4c5cb496eb85a38add9b7f4dad362",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/test-templates/php/e2e-test.template",
+      "sha256": "6692f6b8b1a18f3a1c4094cc31c122c2b5e6391d6e9f430e92b67c66c4d10e2b",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/test-templates/php/database-test.template",
+      "sha256": "c4b9b04c2fba540bbced69fb67fd8591c3312047b4b6f7ea6598568aaed5364f",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/test-templates/php/api-rest-test.template",
+      "sha256": "6475b063cc95995e3b32eed27645a5cf38a1f7ffcf02df21fa73e80dd7f5d91e",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/test-templates/php/unit-test.template",
+      "sha256": "4405f5bf93d28abab69ecb699d1fea8c7720418879426b3d35d65f2760f8e32c",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/test-templates/fixtures/api_fixtures.py",
+      "sha256": "6723bfed18d69cc305fc5c9d6d0c3eba0ee34915e10e4060ce90dc7d5e39764e",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/test-templates/fixtures/mock_services.py",
+      "sha256": "06517f39d76220b25586fc28af5fd3754e6f4d7b5fe34bc64de0f013dd8c0c2d",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/test-templates/fixtures/database_fixtures.py",
+      "sha256": "8494b8dad68f6bf02a10870cc97ebb3d9222c01784cd784f2dd4b2fe608e47b3",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/test-templates/javascript/e2e-test.template",
+      "sha256": "72fbe7f4adc31d47a95be25ada32fc2ce3411af49d2ccd4b0a1d9a62d1861ca1",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/test-templates/javascript/database-test.template",
+      "sha256": "98e63523996b294f26c141ebfeb11d11c1df6383fdf68b0eae1fb5c7b2763a9f",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/test-templates/javascript/api-rest-test.template",
+      "sha256": "950484ae651d31f2dd3f8222c8ed790fa1fc1ef7bfcbd871825ede3d937101d7",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/templates/test-templates/javascript/unit-test.template",
+      "sha256": "f99d103229793d93f2e19b2e285086eb16d071b3254ca4b1315d7a1b3adb639e",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/scripts/bash/verify-ignore-files.sh",
+      "sha256": "e9631095e574667f86d91f6e50407818ae7442e3f931e3cc1820a0f65adb7fe1",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/scripts/bash/render-png-assets.sh",
+      "sha256": "74f403645d5e35b13e524ada690d5d053aeaeb2de1060c99510dd092a3ff7087",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/scripts/bash/verify-url-accessibility.sh",
+      "sha256": "8dfc2a3c1fc63505fe3fe629c839dd0f8cffafda550c0237e540f5d16a946ccc",
+      "strategy": "replace",
+      "mode": "755"
+    },
+    {
+      "path": ".gobuildme/scripts/bash/validate-architecture-docs.sh",
+      "sha256": "8c64f3e72f0e9a8af8f55a5023805941c38e3d9eab296b2af4948574e1ca1b22",
+      "strategy": "replace",
+      "mode": "755"
+    },
+    {
+      "path": ".gobuildme/scripts/bash/setup-ci-matrix.sh",
+      "sha256": "dcf76e54f11180ee8c735b5db8a4bff9aa8196fcbc363abcf57438553ac03729",
+      "strategy": "replace",
+      "mode": "755"
+    },
+    {
+      "path": ".gobuildme/scripts/bash/common.sh",
+      "sha256": "fcc939f789dfdac925875d5aa08b25af0bad22081b1647ebb6077c35c98aa612",
+      "strategy": "replace",
+      "mode": "755"
+    },
+    {
+      "path": ".gobuildme/scripts/bash/devspace-detect.sh",
+      "sha256": "02263f9914abd54fbfe2941ce08ba6c2b9f16f56ca266c1f526b2a6c42cd9d86",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/scripts/bash/create-design.sh",
+      "sha256": "0f13abc924e13f08568e2e39eb4a6b135d63a0152059993322d0f0d32be1aa65",
+      "strategy": "replace",
+      "mode": "755"
+    },
+    {
+      "path": ".gobuildme/scripts/bash/setup-specify.sh",
+      "sha256": "5caaf8c42e3f72b614326124e2e3347859483496d234daf5d10861d59460ed76",
+      "strategy": "replace",
+      "mode": "755"
+    },
+    {
+      "path": ".gobuildme/scripts/bash/security-scan.sh",
+      "sha256": "cbb1d52382ab66d3920d7e1b519976e931abbb6ab9482d4e059a63a3d91ab9ba",
+      "strategy": "replace",
+      "mode": "755"
+    },
+    {
+      "path": ".gobuildme/scripts/bash/run-format.sh",
+      "sha256": "20988be5cb1b90a8951c21687f95798955bae26be0ab24a17b478404ee5a1b59",
+      "strategy": "replace",
+      "mode": "755"
+    },
+    {
+      "path": ".gobuildme/scripts/bash/validate-architecture.sh",
+      "sha256": "d7995e27fa9c958b0b9738df3a91036d6d2d100ac67bb6208b89d2cf98e1898f",
+      "strategy": "replace",
+      "mode": "755"
+    },
+    {
+      "path": ".gobuildme/scripts/bash/pm-discover.sh",
+      "sha256": "981e5e08a38200977bde6e1fa7993c1699e1fd7ef94d90eb40e7080eca7e65b3",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/scripts/bash/validate-constitution.sh",
+      "sha256": "f05b4e508296186ba44f5061daf108cefc79bc38c0fb7733203586f1020dfed9",
+      "strategy": "replace",
+      "mode": "755"
+    },
+    {
+      "path": ".gobuildme/scripts/bash/run-tests.sh",
+      "sha256": "ff523f77494211fe73de3c79f73ca4643d2f246244fbf4679a0f1206426b8b61",
+      "strategy": "replace",
+      "mode": "755"
+    },
+    {
+      "path": ".gobuildme/scripts/bash/generate-web-archive-link.sh",
+      "sha256": "5e283b2dc6574eb86e689d795639582b48d130ff3c680cba691c5339a17eb192",
+      "strategy": "replace",
+      "mode": "755"
+    },
+    {
+      "path": ".gobuildme/scripts/bash/pm-research.sh",
+      "sha256": "379fd425f3d3bc7e23781dde8cba371c3606bf712d841ae85b53d27ab80257df",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/scripts/bash/fact-check.sh",
+      "sha256": "cd29a2db352901aa947117d28f4ca1a76c1561ae3d42e5f697da1fbebd677e71",
+      "strategy": "replace",
+      "mode": "755"
+    },
+    {
+      "path": ".gobuildme/scripts/bash/install-codex-prompts.sh",
+      "sha256": "b6f5cc13885c8c9f28d5e6a13aefd77eb397f77172b1d3bab00b44de7ce7aa41",
+      "strategy": "replace",
+      "mode": "755"
+    },
+    {
+      "path": ".gobuildme/scripts/bash/setup-plan.sh",
+      "sha256": "2310752cc88aa03f37d5d500c793da8cac0e1775c83c09387079106b10fc11f9",
+      "strategy": "replace",
+      "mode": "755"
+    },
+    {
+      "path": ".gobuildme/scripts/bash/setup-ci.sh",
+      "sha256": "9471eb36f9920c6147bea2421d0632af0edc17229b747369ca6aaf231ccaaeb2",
+      "strategy": "replace",
+      "mode": "755"
+    },
+    {
+      "path": ".gobuildme/scripts/bash/push.sh",
+      "sha256": "d064dd7a951528309d197a5fda14621dc302c4dd8b256234d385190dfb841f94",
+      "strategy": "replace",
+      "mode": "755"
+    },
+    {
+      "path": ".gobuildme/scripts/bash/setup-security.sh",
+      "sha256": "3da3f0b633053b5a013a3d8d7be4182194f32d84a2b108743f00b7f94fb6cf55",
+      "strategy": "replace",
+      "mode": "755"
+    },
+    {
+      "path": ".gobuildme/scripts/bash/measure-template-verbosity.sh",
+      "sha256": "8492896455715f466772cb4c3df44c7b3854be9506f75133ec74dd600a144abb",
+      "strategy": "replace",
+      "mode": "755"
+    },
+    {
+      "path": ".gobuildme/scripts/bash/loc-analysis.sh",
+      "sha256": "9f6ca644586a97962e6e9e6a93f28191a5432cd0d134721a9f9e30fe8933abc3",
+      "strategy": "replace",
+      "mode": "755"
+    },
+    {
+      "path": ".gobuildme/scripts/bash/offline-init.sh",
+      "sha256": "649701b3d7f30553a5eba9373169a38074c2db87feb452ed06df451fb57428b9",
+      "strategy": "replace",
+      "mode": "755"
+    },
+    {
+      "path": ".gobuildme/scripts/bash/create-docs.sh",
+      "sha256": "e410adba4f9727370d13079c41ddccbcba23cf3beb5c1029c5d8f560e32f2fc0",
+      "strategy": "replace",
+      "mode": "755"
+    },
+    {
+      "path": ".gobuildme/scripts/bash/observability-sanity.sh",
+      "sha256": "aa64c55329ccf138c6aaa8fb0a28167670a3e387131c79965a31c5cd60300080",
+      "strategy": "replace",
+      "mode": "755"
+    },
+    {
+      "path": ".gobuildme/scripts/bash/qa-plan.sh",
+      "sha256": "c92e9032d066a5535ab609283006779a1bb03c488e3431880c489c9c1e598285",
+      "strategy": "replace",
+      "mode": "755"
+    },
+    {
+      "path": ".gobuildme/scripts/bash/scaffold-tests.sh",
+      "sha256": "a27a9d4d226228b06c9c35d4effc06e07aac754bfaa5e285a7790ae357e86081",
+      "strategy": "replace",
+      "mode": "755"
+    },
+    {
+      "path": ".gobuildme/scripts/bash/check-prerequisites.sh",
+      "sha256": "2d28f1106a06e3eb44bc1f114c245246b530822f9692935d7b0be638721f22b2",
+      "strategy": "replace",
+      "mode": "755"
+    },
+    {
+      "path": ".gobuildme/scripts/bash/pm-stories.sh",
+      "sha256": "4ed0c97108c6a25bbb559817cb73a4d0f69e83a42a63747618c9da869a30e869",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/scripts/bash/persona-lint.sh",
+      "sha256": "9f90a58590835b15500d67343bb0ef6d3256abfd4c4e00ad242a2e9a6d4cd2b8",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/scripts/bash/validate-coverage.sh",
+      "sha256": "eeaf434f119fc5a2913ee28cf4df32d683515f6cbfe6e75044a7d908f34c299d",
+      "strategy": "replace",
+      "mode": "755"
+    },
+    {
+      "path": ".gobuildme/scripts/bash/update-agent-context.sh",
+      "sha256": "4dde8d705026dda9011d560f1ad841573bc412819aaf3503ff99e079457c2e69",
+      "strategy": "replace",
+      "mode": "755"
+    },
+    {
+      "path": ".gobuildme/scripts/bash/upload-spec.sh",
+      "sha256": "36922f63367c4815d40258eb2d4c80bb08302e11fe6e25a5a5923eb8ee2ddc6b",
+      "strategy": "replace",
+      "mode": "755"
+    },
+    {
+      "path": ".gobuildme/scripts/bash/pm-validate-problem.sh",
+      "sha256": "d9d180927185f2118138f317d0f6fd4a2c0beef5b6dd8f71489434b56982086b",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/scripts/bash/gbm-harness.sh",
+      "sha256": "2824361d3fad9a39e6a571b5b22ad68284b13d2a9215abd3ca748adc9b3e4118",
+      "strategy": "replace",
+      "mode": "755"
+    },
+    {
+      "path": ".gobuildme/scripts/bash/setup-pr-review.sh",
+      "sha256": "05edf45c56ca55e17215ca020d39f0b618ac4b2399bfa43f3a079911dd04c088",
+      "strategy": "replace",
+      "mode": "755"
+    },
+    {
+      "path": ".gobuildme/scripts/bash/run-type-check.sh",
+      "sha256": "d750066a2e239eb50bdf065168c59d2e02331f163a6528c326fd75c75f014e25",
+      "strategy": "replace",
+      "mode": "755"
+    },
+    {
+      "path": ".gobuildme/scripts/bash/qa-common.sh",
+      "sha256": "c27a196297d3849693b8d48e11b788821661b013fbd4e30fa4f6bb45347b13cd",
+      "strategy": "replace",
+      "mode": "755"
+    },
+    {
+      "path": ".gobuildme/scripts/bash/branch-status.sh",
+      "sha256": "b9282ab18bb5b0ba734056b6f9e5911fb7b7302a622fa51508b02b14c73ec1b7",
+      "strategy": "replace",
+      "mode": "755"
+    },
+    {
+      "path": ".gobuildme/scripts/bash/run-integration-tests.sh",
+      "sha256": "a4014fffe884450f053d2ff70cc6b75a1b3fc7c4217ef5738b6775c45809100b",
+      "strategy": "replace",
+      "mode": "755"
+    },
+    {
+      "path": ".gobuildme/scripts/bash/pm-handoff.sh",
+      "sha256": "db408b5514af4fb392c31d04436df5f12f3cfb74da5bd875dcc5254f2cec9239",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/scripts/bash/format-check.sh",
+      "sha256": "8aadb72953e7d317cde5ac5ef8d6e28a961658dd4a74c18015c898adeb52fc7a",
+      "strategy": "replace",
+      "mode": "755"
+    },
+    {
+      "path": ".gobuildme/scripts/bash/pm-prd.sh",
+      "sha256": "cdf860da36d72adbd65e76d5dfd329c445fd204ed233ffc145f678935fe56b7d",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/scripts/bash/validate-template-style.sh",
+      "sha256": "6e7a92d2a401590cd15e67f994bede1ded60106211a1cf653a35d7841f67e934",
+      "strategy": "replace",
+      "mode": "755"
+    },
+    {
+      "path": ".gobuildme/scripts/bash/review-tests.sh",
+      "sha256": "22f6c49d2c4d42f0a4470e68254daeeae8f6e181e08258a034d3dfb8dad31cfb",
+      "strategy": "replace",
+      "mode": "755"
+    },
+    {
+      "path": ".gobuildme/scripts/bash/gbm-verification-status.sh",
+      "sha256": "e58a9f15d78eb5a7e877e5de26a24c649e2a24621a1d6a72d706ecda07aa9901",
+      "strategy": "replace",
+      "mode": "755"
+    },
+    {
+      "path": ".gobuildme/scripts/bash/setup-format-check.sh",
+      "sha256": "6c405b88fc8082a34a8355fd4e1c2b2bb9785007ee86d7dbb769df659bd53ab9",
+      "strategy": "replace",
+      "mode": "755"
+    },
+    {
+      "path": ".gobuildme/scripts/bash/run-lint.sh",
+      "sha256": "10986cfcbdeff9a85c524ea5ae97c1ce82458f08a0dc2d17913861e0ea891fe7",
+      "strategy": "replace",
+      "mode": "755"
+    },
+    {
+      "path": ".gobuildme/scripts/bash/comprehensive-review.sh",
+      "sha256": "84f46a77f7457f6fd07fb53233913f7ebdbefbb603d45453493260c7e29d5379",
+      "strategy": "replace",
+      "mode": "755"
+    },
+    {
+      "path": ".gobuildme/scripts/bash/validate-conventions.sh",
+      "sha256": "0836b823aa36ae6f79b00b3506c36eaeab7321e36b84dd318b9f6a8bf6d5b753",
+      "strategy": "replace",
+      "mode": "755"
+    },
+    {
+      "path": ".gobuildme/scripts/bash/scan-codebase.sh",
+      "sha256": "72ba777629817a9fd739fc8885dda10e1999d26f611667d7f7c705eed646e078",
+      "strategy": "replace",
+      "mode": "755"
+    },
+    {
+      "path": ".gobuildme/scripts/bash/qa-implement.sh",
+      "sha256": "83cabf3a5454276b2acfb4d4d4121074a29211c62355d15a22dde3787c4c605b",
+      "strategy": "replace",
+      "mode": "755"
+    },
+    {
+      "path": ".gobuildme/scripts/bash/generate-fixtures.sh",
+      "sha256": "f65ae89772cd265f5809d10613edb6bdec111bb6ba3d650ff8285725db4945c9",
+      "strategy": "replace",
+      "mode": "755"
+    },
+    {
+      "path": ".gobuildme/scripts/bash/qa-tasks.sh",
+      "sha256": "bc83e7ee3a5cc9c81364b83e4de60844b71cf2142e874b189f94397468a8ba96",
+      "strategy": "replace",
+      "mode": "755"
+    },
+    {
+      "path": ".gobuildme/scripts/bash/implement-tests.sh",
+      "sha256": "454b65814c63d7b816d31adb738f0688c1bdd4f64121ed46148bf3a65b4fb599",
+      "strategy": "replace",
+      "mode": "755"
+    },
+    {
+      "path": ".gobuildme/scripts/bash/slo-synthetic.sh",
+      "sha256": "6aab4ad8dcbbc9a3df8b19e3eded2b786e1bfaa2295ce212790f0c5db760b263",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/scripts/bash/slo-lint.sh",
+      "sha256": "1e95121e1bbb21406a8bf25c117a163a4b62b9fdd078458a55f139725ca0a663",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/scripts/bash/ready-to-push.sh",
+      "sha256": "b3f175c7bcdb85081dd950164bc7822925add4c10de2c38eee932ecfff7dbbf5",
+      "strategy": "replace",
+      "mode": "755"
+    },
+    {
+      "path": ".gobuildme/scripts/bash/gbm-verification-validate.sh",
+      "sha256": "d8afa1a23eb7dbbec50eed419476cca2a13487342a9a0aa9b33cb699324fa467",
+      "strategy": "replace",
+      "mode": "755"
+    },
+    {
+      "path": ".gobuildme/scripts/bash/scaffold-observability.sh",
+      "sha256": "5f2d1ad62baf2e222e46a87459c9b26293a509b1c04566cbaa6ebde0c31bc05d",
+      "strategy": "replace",
+      "mode": "755"
+    },
+    {
+      "path": ".gobuildme/scripts/bash/analyze-architecture.sh",
+      "sha256": "6ba7ddc717b3d322b0adbb6225a2fd31cb2ded1064b34b3596a64c654f75c763",
+      "strategy": "replace",
+      "mode": "755"
+    },
+    {
+      "path": ".gobuildme/scripts/bash/devspace-sanity.sh",
+      "sha256": "9374e55cdf2fff22cf53c3d935177c88ffd0993502f168b32857cc530815f053",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/scripts/bash/pm-align.sh",
+      "sha256": "eb93efa9832a5a163a55714caa8bbdbef67a0229c52570343e5190f1bdbecf13",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/scripts/bash/create-request.sh",
+      "sha256": "3f33d95f195eebbbdce34ac54e0451560dbd21c9c2cef7e889a7ac088aeb0796",
+      "strategy": "replace",
+      "mode": "755"
+    },
+    {
+      "path": ".gobuildme/scripts/bash/pm-interview.sh",
+      "sha256": "4a419568b824e5410eab22d1ad473e798bd52385fd87fb7453575961cdabe3a2",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/scripts/bash/restore-tests.sh",
+      "sha256": "83abd929369b509d516bb460a2fb1065cee94e1e8e8814223adccc919493cfcd",
+      "strategy": "replace",
+      "mode": "755"
+    },
+    {
+      "path": ".gobuildme/scripts/bash/post-command-hook.sh",
+      "sha256": "bec99201b8776c5ed0ceb65bd2952bf95731373a24938972f189e50fb699f021",
+      "strategy": "replace",
+      "mode": "755"
+    },
+    {
+      "path": ".gobuildme/scripts/bash/run-self-driving.sh",
+      "sha256": "a892f8d5ace8106afc0628c3250cb433a682182323be369acc2947af4eb3276d",
+      "strategy": "replace",
+      "mode": "755"
+    },
+    {
+      "path": ".gobuildme/scripts/bash/create-new-feature.sh",
+      "sha256": "3dc918ecb856639c8bb949ce5ca8405fe3849b7be6c6c9c19d55105eb4752cc2",
+      "strategy": "replace",
+      "mode": "755"
+    },
+    {
+      "path": ".gobuildme/scripts/bash/get-telemetry-context.sh",
+      "sha256": "d12b5d7ffdf7ce9b763f5ed953f84e95b3fee97be8c2315554bcb733c2149d01",
+      "strategy": "replace",
+      "mode": "755"
+    },
+    {
+      "path": ".gobuildme/scripts/powershell/setup-pr-review.ps1",
+      "sha256": "9b737e7f276ee05031f2eec17cdce96e036e7177863a4dc68a7e6b150ff072fc",
+      "strategy": "replace",
+      "mode": "755"
+    },
+    {
+      "path": ".gobuildme/scripts/powershell/qa-common.ps1",
+      "sha256": "02ea1927f777469225a446398d1513e42e4e1ce77acb6c0501541664c6f646b2",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/scripts/powershell/offline-init.ps1",
+      "sha256": "d3d546ce513c0bde75dce5ec9f746b859186aea74c12b596a705be36f591e7a0",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/scripts/powershell/devspace-detect.ps1",
+      "sha256": "aa4ee7f4c8fb3cd1150bcefb37f24c6a215f3abd2436f815c86ff09c16dd3be6",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/scripts/powershell/run-tests.ps1",
+      "sha256": "f593aca37cec1d308d64f94e675703b626196c67307547a7714cf767479cbdfb",
+      "strategy": "replace",
+      "mode": "755"
+    },
+    {
+      "path": ".gobuildme/scripts/powershell/setup-security.ps1",
+      "sha256": "aaffb4884d390b82fb0516bf6a0bc901b57f3205b139c51002b66ec9d7691a8d",
+      "strategy": "replace",
+      "mode": "755"
+    },
+    {
+      "path": ".gobuildme/scripts/powershell/fact-check.ps1",
+      "sha256": "c5f7246ba126f36ceb1c73dd35b3db4e8d2d1a1717d2cfb5605dd728314c2769",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/scripts/powershell/push.ps1",
+      "sha256": "f083808f793551653342bf426480506abded47d626f4cf8f705a7da5da81d45c",
+      "strategy": "replace",
+      "mode": "755"
+    },
+    {
+      "path": ".gobuildme/scripts/powershell/qa-plan.ps1",
+      "sha256": "d9c5d5d6146299845f5943c91dd9447007267a00841fd755576fb128ce42067b",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/scripts/powershell/run-lint.ps1",
+      "sha256": "29bc9672517ea2a2892320c60b46d6baf56fbf36da0f8de87e1f3b3d48bb7fc5",
+      "strategy": "replace",
+      "mode": "755"
+    },
+    {
+      "path": ".gobuildme/scripts/powershell/upload-spec.ps1",
+      "sha256": "25a9bfb1df1c4faf9054c6a4c48b76b1d48fd73dbe26fb0e820d40ac954933e0",
+      "strategy": "replace",
+      "mode": "755"
+    },
+    {
+      "path": ".gobuildme/scripts/powershell/ready-to-push.ps1",
+      "sha256": "8ff6840355a1baff1d3d107e1fe621b570f7ae32eb4a6ce8908d28fa607c8ed3",
+      "strategy": "replace",
+      "mode": "755"
+    },
+    {
+      "path": ".gobuildme/scripts/powershell/persona-lint.ps1",
+      "sha256": "0e7a896f0a25e1d4972442344ce5b86ce5c1a58deb8d7188a384ceea44d5d2d7",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/scripts/powershell/setup-ci-matrix.ps1",
+      "sha256": "3d21d964fe4e8493c5c2468bd1760b9daf96b44f00deb8ccf6d9c8f6ab9e6732",
+      "strategy": "replace",
+      "mode": "755"
+    },
+    {
+      "path": ".gobuildme/scripts/powershell/setup-ci.ps1",
+      "sha256": "d2dfc635236e7575afdcb90dbf802d69b9d8c76cbc1c1df3950a86e11d7faaa0",
+      "strategy": "replace",
+      "mode": "755"
+    },
+    {
+      "path": ".gobuildme/scripts/powershell/implement-tests.ps1",
+      "sha256": "179de706d82669dcbe7432b0aad8c34f81f9b3c1ead9bd3ada4ddf5af0af5ea5",
+      "strategy": "replace",
+      "mode": "755"
+    },
+    {
+      "path": ".gobuildme/scripts/powershell/restore-tests.ps1",
+      "sha256": "57874815e9ef5d5405eeb137656b6c5ef4c21841d0224c63adc5a4089c9a428f",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/scripts/powershell/comprehensive-review.ps1",
+      "sha256": "e8e8c22449d11e8af91b64297e0bb0abaaee6929bc008bece385103ed1897486",
+      "strategy": "replace",
+      "mode": "755"
+    },
+    {
+      "path": ".gobuildme/scripts/powershell/generate-web-archive-link.ps1",
+      "sha256": "733c9442a48e510d24eda9d56a6d61446b653831f5c5331dad5fed5a2cc27403",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/scripts/powershell/post-command-hook.ps1",
+      "sha256": "3bba978b3255466a097373e56e33b8ddeadd1c792b7ad8ccb66d8ecbabbfeca3",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/scripts/powershell/qa-tasks.ps1",
+      "sha256": "89d8d7187cc96b28fd3c1d587bcf081b309731b3a32546891c3085d9049103fc",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/scripts/powershell/validate-architecture.ps1",
+      "sha256": "fc67faa4a085018df6fe9808cfe29e7743ec9374243434f47957579aa204416a",
+      "strategy": "replace",
+      "mode": "755"
+    },
+    {
+      "path": ".gobuildme/scripts/powershell/check-prerequisites.ps1",
+      "sha256": "0d6a0683bacb911b55449874ee4381120d49a19bd72b4ab1109ada200a93907b",
+      "strategy": "replace",
+      "mode": "755"
+    },
+    {
+      "path": ".gobuildme/scripts/powershell/run-format.ps1",
+      "sha256": "cb11ab75af1cea84c2f8aa567970e7d6d939f6a9953d1a677f6b727bc7d4061b",
+      "strategy": "replace",
+      "mode": "755"
+    },
+    {
+      "path": ".gobuildme/scripts/powershell/validate-conventions.ps1",
+      "sha256": "efe5d18c767bd5f62353afe09dcd5a20fc6e8fb5d049b9f174e1f309a87edeb5",
+      "strategy": "replace",
+      "mode": "755"
+    },
+    {
+      "path": ".gobuildme/scripts/powershell/format-check.ps1",
+      "sha256": "575f1b39adce806eb195f977e14419489b477aadf166fcbbf4df6406df51f8b8",
+      "strategy": "replace",
+      "mode": "755"
+    },
+    {
+      "path": ".gobuildme/scripts/powershell/gbm-verification-status.ps1",
+      "sha256": "ac3d60e9a66ac1d1a2fb95a11a31d3258864d3a8c47d303a734265a7ae0b8e95",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/scripts/powershell/pm-interview.ps1",
+      "sha256": "089c7824aa18cecf39e1fcd2271bfed2ad8a92f414b0e46949dd8cfd599dc72f",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/scripts/powershell/common.ps1",
+      "sha256": "1737b1a0d39bc74712a2da74f07f91f8377d6c900afc47e8718ea7d417c7d292",
+      "strategy": "replace",
+      "mode": "755"
+    },
+    {
+      "path": ".gobuildme/scripts/powershell/pm-validate-problem.ps1",
+      "sha256": "6b4daab97beb5227b1d9d97f516e7ba337ee7c5a0e72cccee5737a9715134bac",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/scripts/powershell/branch-status.ps1",
+      "sha256": "13584f3b83da5db8e8ef7ed17d5e30763ed9746bebcd7999e17c536f43ca40fb",
+      "strategy": "replace",
+      "mode": "755"
+    },
+    {
+      "path": ".gobuildme/scripts/powershell/analyze-architecture.ps1",
+      "sha256": "913075c90b83ec96b4c9d695b07ee59382dc48ca2a5b12c22e0a107d8239f57c",
+      "strategy": "replace",
+      "mode": "755"
+    },
+    {
+      "path": ".gobuildme/scripts/powershell/verify-ignore-files.ps1",
+      "sha256": "9284eb1670538c0d311ebe435b2ef32ba8455225ddcaaec81b98f948e57152c1",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/scripts/powershell/qa-implement.ps1",
+      "sha256": "886d65b9753202890daec6a6c6f2484b86fcf9ba38a53fa41a0bb94ad54fe47d",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/scripts/powershell/pm-prd.ps1",
+      "sha256": "9671b6f8afb3e5d00ac21230ca3b3f83843c6cb4da4898993f217e4ead980e24",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/scripts/powershell/gbm-verification-validate.ps1",
+      "sha256": "23571b1506246d1b39c69498746a6207bb5265a6c6544f743a8c96b923287931",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/scripts/powershell/update-agent-context.ps1",
+      "sha256": "259fea520044ff04d96d0c2366ecc01899cc0f2a495564a420290be957bef4c8",
+      "strategy": "replace",
+      "mode": "755"
+    },
+    {
+      "path": ".gobuildme/scripts/powershell/gbm-harness.ps1",
+      "sha256": "1c3a3336598d2c48d2c780b61e416962cc2f3700e18fab9d8fbbd57cc57b5b84",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/scripts/powershell/setup-plan.ps1",
+      "sha256": "fe1d1bd5dbb42c0a752f5dbcae055fe775e2412081c65029eb9db461588d4c24",
+      "strategy": "replace",
+      "mode": "755"
+    },
+    {
+      "path": ".gobuildme/scripts/powershell/run-integration-tests.ps1",
+      "sha256": "5ef95fec11d6c110397b400814feb72a853edcce9797c353d48d6ea12edb679e",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/scripts/powershell/create-request.ps1",
+      "sha256": "5eac7f9b412b4e0deb18a825b8fab8db8267c4dc25acd4872ee6e8d886c25fb0",
+      "strategy": "replace",
+      "mode": "755"
+    },
+    {
+      "path": ".gobuildme/scripts/powershell/devspace-sanity.ps1",
+      "sha256": "e25afddc2f6aa562daba3f827b4fac66af052080a0734c19de2616899aaede04",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/scripts/powershell/generate-fixtures.ps1",
+      "sha256": "1f4e4ffbbfebd996b2abe275acb182ded5ac02b0f1371cc5d51e9303b169746c",
+      "strategy": "replace",
+      "mode": "755"
+    },
+    {
+      "path": ".gobuildme/scripts/powershell/security-scan.ps1",
+      "sha256": "1de4b279f8cb5c4c8361dbba69c53a0fd238e260df750f101ecd308e14120b3f",
+      "strategy": "replace",
+      "mode": "755"
+    },
+    {
+      "path": ".gobuildme/scripts/powershell/observability-sanity.ps1",
+      "sha256": "6ad69e1b6f8272e7ecc7384c93c8d6d0fe414f21c505a2bd24e25afb3bdd6f25",
+      "strategy": "replace",
+      "mode": "755"
+    },
+    {
+      "path": ".gobuildme/scripts/powershell/pm-research.ps1",
+      "sha256": "28b9010b64bfabc02c49b49a811a3366e45ad58317fc9661945dc8e4e4b5b0b5",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/scripts/powershell/scaffold-observability.ps1",
+      "sha256": "15f8321e9aa5e9c89411d2f124f6c849d37f5db2853e73c4b97bef06e9e68066",
+      "strategy": "replace",
+      "mode": "755"
+    },
+    {
+      "path": ".gobuildme/scripts/powershell/pm-align.ps1",
+      "sha256": "be3b29623b801fd35f98da265d6339463fd1606ab6f6b53075b67957ec16eac5",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/scripts/powershell/create-design.ps1",
+      "sha256": "c01d5463211389ef38c3edcf55de336fcf93843277a19642d73b05c3f0fa892d",
+      "strategy": "replace",
+      "mode": "755"
+    },
+    {
+      "path": ".gobuildme/scripts/powershell/review-tests.ps1",
+      "sha256": "25e2587f9b8d982b667b92bb1d333bcedfcb7644cf7da52947b59211c6fcd74e",
+      "strategy": "replace",
+      "mode": "755"
+    },
+    {
+      "path": ".gobuildme/scripts/powershell/Render-Png-Assets.ps1",
+      "sha256": "6691b14755fb4679860fce988822ff923f3f74183899ffdf0a33b32beb3457cc",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/scripts/powershell/scaffold-tests.ps1",
+      "sha256": "d91219b061b103e54ba1d58d97956449bea91ebbaa23bff740cf374af2748b0d",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/scripts/powershell/scan-codebase.ps1",
+      "sha256": "57d23d9bb01484d9bf631c82fc800038fa107148985b9d46261192af8be28117",
+      "strategy": "replace",
+      "mode": "755"
+    },
+    {
+      "path": ".gobuildme/scripts/powershell/pm-discover.ps1",
+      "sha256": "0cc39064882d35e73cf186ea5a5d6fab2d270a7585ac515f2d1e765ec11bdf56",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/scripts/powershell/install-codex-prompts.ps1",
+      "sha256": "b3576e0de4d1efbd314c4e04d17a69509371c0f9473079cf8a42a10547a78c6d",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/scripts/powershell/slo-synthetic.ps1",
+      "sha256": "bc49a6639420c51951419e8d03021728a716df70a78e8ca379f26e59c41524f6",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/scripts/powershell/get-telemetry-context.ps1",
+      "sha256": "7db1bfb4b112b1ad92431b81089c723a2ec2153863b9525317d1872a73fe82db",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/scripts/powershell/validate-coverage.ps1",
+      "sha256": "b80d08c246d1b12f208f45ec3841df12fb51ebe6d85bc58342c3c1351d151501",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/scripts/powershell/verify-url-accessibility.ps1",
+      "sha256": "cb5a7bf023b63c81b041ee32c32bda2ace6cb31da4b8856811c3339e9340e79c",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/scripts/powershell/validate-architecture-docs.ps1",
+      "sha256": "8a71d0b9e1ab16aff03338618993af3eebf6e6e30f289ac405a4559667afa31d",
+      "strategy": "replace",
+      "mode": "755"
+    },
+    {
+      "path": ".gobuildme/scripts/powershell/create-new-feature.ps1",
+      "sha256": "7fdc7c5cd44b59d249855687f6179c78e60c21ad3e057f8971bc9d9729154928",
+      "strategy": "replace",
+      "mode": "755"
+    },
+    {
+      "path": ".gobuildme/scripts/powershell/run-self-driving.ps1",
+      "sha256": "2996bee5d7e36eda04ef0913aab5e4b47f75e51d7fbe3727a13d3602a90ddf08",
+      "strategy": "replace",
+      "mode": "755"
+    },
+    {
+      "path": ".gobuildme/scripts/powershell/pm-handoff.ps1",
+      "sha256": "2d1ea84fc82e36c26cfc52e226133d02988d7404ba1fd5b24efc3ca340b5c7b7",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/scripts/powershell/measure-template-verbosity.ps1",
+      "sha256": "4fd5e0f140f4fbc1bffb7847a5fdc299f40c24ac758c15b7216c5f3004a06d82",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/scripts/powershell/slo-lint.ps1",
+      "sha256": "d9ed9983fbcc7b98c516905b0650793dde332500524d7e85225477fced6dbe37",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/scripts/powershell/validate-constitution.ps1",
+      "sha256": "73a0bde6297b099fdead71f162773b2a948d286abb2651076c06be611ab9d3b1",
+      "strategy": "replace",
+      "mode": "755"
+    },
+    {
+      "path": ".gobuildme/scripts/powershell/run-type-check.ps1",
+      "sha256": "d18351271474d87d0d32b5b18944f06887070c6770cab85859a38c35dc072a9b",
+      "strategy": "replace",
+      "mode": "755"
+    },
+    {
+      "path": ".gobuildme/scripts/powershell/pm-stories.ps1",
+      "sha256": "ec4e84515251102a03f04ab1fcd18836c2ae0cebd20d03fe48fcf20434c7dff5",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/scripts/powershell/create-docs.ps1",
+      "sha256": "5233cde2441b9ed2dce32aa78486910b5f9aa901c2ff675ecfe965dd2cd9358e",
+      "strategy": "replace",
+      "mode": "755"
+    },
+    {
+      "path": ".gobuildme/scripts/powershell/setup-format-check.ps1",
+      "sha256": "cf21d1aedcb65f83a62bc953b675c2f6185973930b56b62a2eecbee562c960d0",
+      "strategy": "replace",
+      "mode": "755"
+    },
+    {
+      "path": ".gobuildme/scripts/powershell/validate-template-style.ps1",
+      "sha256": "9783f6e6f44ba4928df491d6b35b61e1dea4386ee2ab9bf75ff8f6c268ab4f3a",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/scripts/powershell/setup-specify.ps1",
+      "sha256": "578831a22ec7473134fb09afa2135f01ac404201f10738a28ce576573f351ebc",
+      "strategy": "replace",
+      "mode": "755"
+    },
+    {
+      "path": ".gobuildme/scripts/powershell/loc-analysis.ps1",
+      "sha256": "cb2687e1ee02a8af4a3229259a074315f73cf9ea5b02e10d3201fc9786c62213",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/gobuildme-docs/personas/ml-engineer-manual.md",
+      "sha256": "cb9a42a073f5c1ef608039e9b813c90e75875484171b62a9a6cf148404d835d2",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/gobuildme-docs/personas/backend-engineer-manual.md",
+      "sha256": "582d088256ad01dee90eb8291d82b331bd8ec569bdb13a3278004fb24a263afd",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/gobuildme-docs/personas/qa-engineer-workflow.md",
+      "sha256": "5a86fa76ab2490d530c2248e7b27a1393a91ced65fa7bd8b02ad138a16105130",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/gobuildme-docs/personas/security-compliance-manual.md",
+      "sha256": "89683392d9904f78e9871f351c7db70cdfd5abeb89cb78a73eba6472c4de02b2",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/gobuildme-docs/personas/qa-engineer-manual.md",
+      "sha256": "4328ab23aad7428c2851fc45d19c424a041b0afd3243fe85fb50e075749e6f45",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/gobuildme-docs/personas/data-engineer-manual.md",
+      "sha256": "047d12295b77881c98bda8e573e5a4e66ce56ad84faf92c5d541f714a10f3542",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/gobuildme-docs/personas/architect-manual.md",
+      "sha256": "4bae27ff7adec5190b2b00d191ec99fb745d1eeb8c2a65e6a1400e75cb2642bc",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/gobuildme-docs/personas/detailed-guide.md",
+      "sha256": "6a89acd74610e6b7b43df06f700f82b874fb89e7368d9bcf259aaa71b2b7d8ab",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/gobuildme-docs/personas/README.md",
+      "sha256": "45427f2d345f0f590f4d8f4b95a662dc7a569770f70b4280fe304deb56c48939",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/gobuildme-docs/personas/maintainer-manual.md",
+      "sha256": "13b9dd5f725dab4cddb129a055e29cfec5d53fa6baebc337a41d38bf75cf4119",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/gobuildme-docs/personas/fullstack-engineer-manual.md",
+      "sha256": "ee85b5a007957466d69da25fd62f800d40819c2d49c03a924b3cdb4f79906fe6",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/gobuildme-docs/personas/persona-gates-reference.md",
+      "sha256": "59260ff8c8edf5f6f36d61ba9a7c8af8290ba1bd42d36de03ebfb747fa6b5ee3",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/gobuildme-docs/personas/product-manager-manual.md",
+      "sha256": "7fc83b48b80c77dd039c59a9702614a943117e78662d5c58bad0e4ec60a23754",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/gobuildme-docs/personas/data-scientist-manual.md",
+      "sha256": "c1e1242841af3105f276898f87981ffc3763e10a124a71ef36515233d5b653f8",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/gobuildme-docs/personas/frontend-engineer-manual.md",
+      "sha256": "66762f3c79d48dbf079d1168eaaadf6dc8ead7e278ef37bf0569403b22e25f38",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/gobuildme-docs/personas/sre-manual.md",
+      "sha256": "c869910695b36d84aa01e525e847592febd23353b43e90997c7f4bad04be2e40",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/gobuildme-docs/handbook/channel-guide.md",
+      "sha256": "7db56ffe3c5c5e7067322726bb092dac63fe61a12446c7e1ed4d04ad1bd552ee",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/gobuildme-docs/handbook/architecture.md",
+      "sha256": "b9007894b7c7dfb9bf01dcaec5447d3d35c8e088dded49c899e33e5b0e72658f",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/gobuildme-docs/handbook/overview.md",
+      "sha256": "0fc7d3386da442df997103dd4153cf357d6e121d2e219a646adc7c6b9fa8553c",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/gobuildme-docs/handbook/harness-behavioral-guardrails.md",
+      "sha256": "28466430e90565039742f9fab1cf4b252f19ff2ebb0ffda58eac9863ad6e519f",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/gobuildme-docs/handbook/upgrade-guide.md",
+      "sha256": "c2b1541f17c50e40a62b26ec71cdd068e5eaa0f3af41198712c5a1b4ee0aab5c",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/gobuildme-docs/handbook/migration-guide.md",
+      "sha256": "95063bc62524d17b1788184f4a55ca0e8150690343bc9da42dbbf3b501355350",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/gobuildme-docs/handbook/checklist-system.md",
+      "sha256": "3dcf58a41e94f702e73b56206049b5193c601f156ea8150811e5db0426449928",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/gobuildme-docs/handbook/workflow.md",
+      "sha256": "52583f2d378b7d18d6f0fd85761a96d7db605310cd403211d5a10f6527308182",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/gobuildme-docs/handbook/harness-guide.md",
+      "sha256": "942493e87ea9cca71ec4eccb8fa96f65970ac6f99bd74152ffe4332f9b34255d",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/gobuildme-docs/handbook/testing.md",
+      "sha256": "eff69b00c7a8a64a7e36c3df80012cab111ecfb28cf2edf31fa99eb7a2550ee2",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/gobuildme-docs/handbook/qa-quick-start.md",
+      "sha256": "9ccb6107b99b83d46d252d653be3d4c5dd28afa8aa64991447099f9fa5283c7a",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/gobuildme-docs/handbook/testing-process.md",
+      "sha256": "3ef80e18adc7c2ea167aff582c6e70052cfb80413f35155c29a927bb43120f09",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/gobuildme-docs/handbook/metadata.md",
+      "sha256": "def987f4e9219080cc450f6f69fe751d122acdb7c5fdfd05d6d8c8db1b9779f8",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/gobuildme-docs/handbook/qa-vs-feature-workflows.md",
+      "sha256": "c3071e3e061ff9e44ecabe77634e71d8d31b246fb79d00acfd0a4fab169b00f3",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/gobuildme-docs/handbook/building-large-systems.md",
+      "sha256": "8cc0b5fb07f83f14397bd8ee219884f1f3edf05ced2e330ff8260ad431b15dd7",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/gobuildme-docs/handbook/loc-analysis.md",
+      "sha256": "3870650f951c4bde7f37633e683e1034a2d0ae88296fc752e02bc5bec9f02fdd",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/gobuildme-docs/handbook/personas.md",
+      "sha256": "831f4de2acf766cb0436e4412c5175b3878b37c02377cf07a704d8afaa9f473d",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/gobuildme-docs/handbook/test-scaffolding-workflow.md",
+      "sha256": "c26b21433b91fca8c3ee91ad29c56d3b84bf2b8ff06a5befcabfca444e0b80bc",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/gobuildme-docs/handbook/qa-migration-guide.md",
+      "sha256": "cba003ba6f3ba96b8206a0d138eab6073cc9b885846a12e218b7135935bb6f8c",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/gobuildme-docs/handbook/onboarding.md",
+      "sha256": "a6b12fb1c5f24b7ed0bcc6aadc7d0139ed5210cacd4673ae130430f67d2722e1",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/gobuildme-docs/handbook/version-management.md",
+      "sha256": "f4c2e7bfff65a8246ff1b47c0d4e239b3298168843eed84538032da3ae3df099",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/gobuildme-docs/reference/templates.md",
+      "sha256": "91fbe017d058318c15dd7b72894d4ff16ce8f1f57eb41fa33ebc7005932c0527",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/gobuildme-docs/reference/quality-gates.md",
+      "sha256": "74057d58e99ac03f3b2da9ff3a25e2e138a8b0b0c215176b1e17c238e0db1f51",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/gobuildme-docs/reference/commands.md",
+      "sha256": "c91fff1f3a3b3c074cd7a5157b7f69b698f6d2e09f8380061d717085638eeae4",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/gobuildme-docs/reference/upgrade-commands.md",
+      "sha256": "a6ac25e2b06b47d07b67678d61477294cd040c92746ce6cc8b238c5e4dc6af7f",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/gobuildme-docs/reference/command-artifacts.md",
+      "sha256": "35f7d138baf1407844e4e3a8709f53504911ef2c5c706738090d70c2b1ed976c",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/gobuildme-docs/reference/metadata-frontmatter-guide.md",
+      "sha256": "54321a5195188caa8bd81adfb28f26436b68d349e65e08e13d802cc0c7bea1e8",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/gobuildme-docs/reference/scripts.md",
+      "sha256": "6e9ce40f4ac750e5d3761931d0aebb405585300b26160cd45810e40ad56ccd1e",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/gobuildme-docs/reference/package-generation-checklist.md",
+      "sha256": "733504ac019e9f066160c8634e6b745a69e3b3b586307d3eccfd66ed0b119941",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/gobuildme-docs/reference/control-gates.md",
+      "sha256": "dcc226c5612f191f6418935fffe0f6028bfe3c36e29bc3272b416dddfa7ae9cd",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/gobuildme-docs/reference/yaml-frontmatter-guide.md",
+      "sha256": "77522466a466d68118b0d56f021312962a67eab4e26c470b34b0193f1d6f59f6",
+      "strategy": "replace",
+      "mode": "644"
+    },
+    {
+      "path": ".gobuildme/gobuildme-docs/reference/harness-cli.md",
+      "sha256": "e26a7ecc768cd16118fc26fce98f8c07a1f8f48d4402712f775e0e8f78bd7ef5",
+      "strategy": "replace",
+      "mode": "644"
+    }
+  ],
+  "telemetry": {
+    "enabled": true,
+    "configured_at": "2026-01-15T15:49:54.637484Z"
+  },
+  "upload_spec": {
+    "auto_upload": false,
+    "s3_bucket": "tools-ai-agents-spec-driven-development-gfm",
+    "configured_at": "2026-01-15T15:49:57.032587Z"
+  },
+  "github_workflows": {
+    "enabled": false,
+    "configured_at": "2026-01-15T15:49:57.885750Z"
+  }
+}
