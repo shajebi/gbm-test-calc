@@ -1,0 +1,96 @@
+:root {
+    --bg-color: #f5f5f5;
+    --calc-bg: #2d2d2d;
+    --display-bg: #1a1a1a;
+    --display-text: #00ff00;
+    --btn-digit: #4a4a4a;
+    --btn-operator: #ff9500;
+    --btn-memory: #505050;
+    --btn-clear: #ff3b30;
+    --btn-equals: #34c759;
+    --btn-text: #ffffff;
+    --btn-hover: 0.85;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    font-family: system-ui, -apple-system, sans-serif;
+    background: var(--bg-color);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator {
+    background: var(--calc-bg);
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+    max-width: 320px;
+    width: 100%;
+}
+
+.display-container {
+    position: relative;
+    margin-bottom: 16px;
+}
+
+.memory-indicator {
+    position: absolute;
+    top: 8px;
+    left: 12px;
+    color: var(--display-text);
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.display {
+    background: var(--display-bg);
+    color: var(--display-text);
+    font-size: 2.5rem;
+    font-family: 'Courier New', monospace;
+    text-align: right;
+    padding: 20px 16px;
+    border-radius: 8px;
+    min-height: 80px;
+    word-break: break-all;
+    overflow: hidden;
+}
+
+.button-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.btn {
+    border: none;
+    border-radius: 8px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    padding: 18px;
+    cursor: pointer;
+    color: var(--btn-text);
+    transition: opacity 0.1s;
+}
+
+.btn:hover { opacity: var(--btn-hover); }
+.btn:active { transform: scale(0.95); }
+.btn:focus { outline: 2px solid #fff; outline-offset: 2px; }
+
+.btn-digit { background: var(--btn-digit); }
+.btn-operator { background: var(--btn-operator); }
+.btn-memory { background: var(--btn-memory); }
+.btn-clear { background: var(--btn-clear); }
+.btn-equals { background: var(--btn-equals); }
+.btn-decimal { background: var(--btn-digit); }
+.btn-wide { grid-column: span 2; }
+
+@media (max-width: 360px) {
+    .calculator { padding: 12px; border-radius: 12px; }
+    .btn { padding: 14px; font-size: 1.1rem; }
+    .display { font-size: 2rem; padding: 16px 12px; }
+}
+

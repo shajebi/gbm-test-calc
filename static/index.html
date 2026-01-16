@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <div id="calculator" class="calculator">
+        <div class="display-container">
+            <span id="memory-indicator" class="memory-indicator" aria-label="Memory has value" hidden>M</span>
+            <div id="display" class="display" aria-live="polite">0</div>
+        </div>
+        <div class="button-grid">
+            <button class="btn btn-clear" data-action="clear" aria-label="Clear">C</button>
+            <button class="btn btn-memory" data-action="memory-clear" aria-label="Memory Clear">MC</button>
+            <button class="btn btn-memory" data-action="memory-recall" aria-label="Memory Recall">MR</button>
+            <button class="btn btn-operator" data-operator="/" aria-label="Divide">÷</button>
+
+            <button class="btn btn-digit" data-digit="7" aria-label="7">7</button>
+            <button class="btn btn-digit" data-digit="8" aria-label="8">8</button>
+            <button class="btn btn-digit" data-digit="9" aria-label="9">9</button>
+            <button class="btn btn-operator" data-operator="*" aria-label="Multiply">×</button>
+
+            <button class="btn btn-digit" data-digit="4" aria-label="4">4</button>
+            <button class="btn btn-digit" data-digit="5" aria-label="5">5</button>
+            <button class="btn btn-digit" data-digit="6" aria-label="6">6</button>
+            <button class="btn btn-operator" data-operator="-" aria-label="Subtract">−</button>
+
+            <button class="btn btn-digit" data-digit="1" aria-label="1">1</button>
+            <button class="btn btn-digit" data-digit="2" aria-label="2">2</button>
+            <button class="btn btn-digit" data-digit="3" aria-label="3">3</button>
+            <button class="btn btn-operator" data-operator="+" aria-label="Add">+</button>
+
+            <button class="btn btn-memory" data-action="memory-subtract" aria-label="Memory Subtract">M−</button>
+            <button class="btn btn-digit" data-digit="0" aria-label="0">0</button>
+            <button class="btn btn-decimal" data-action="decimal" aria-label="Decimal">.</button>
+            <button class="btn btn-equals" data-action="equals" aria-label="Equals">=</button>
+
+            <button class="btn btn-memory btn-wide" data-action="memory-add" aria-label="Memory Add">M+</button>
+        </div>
+    </div>
+    <script src="/static/js/api.js"></script>
+    <script src="/static/js/calculator.js"></script>
+    <script src="/static/js/app.js"></script>
+</body>
+</html>
+
